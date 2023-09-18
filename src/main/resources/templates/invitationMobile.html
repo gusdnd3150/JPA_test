@@ -1,0 +1,143 @@
+{% set layout = "/shared/layout.blank.with_script" %}
+{% extends layout %}
+{% block scripts %}
+<script type="text/javascript" src="/js/apps/mypage.js{{ _dt }}"></script>
+{% endblock %}
+{% block screen_content %}
+
+<div id="my_page" class="invitation-mobile">
+	<div class="invitation backgraound">
+	
+		<section class="cover cover_page">
+			<img name="cover-background" src="C:\Users\user\git\sinbuya-invitation\src\main\webapp\img\invitationMobile\invitationMobile-2\cover-background.png">
+			<img name="cover-title" src="C:\Users\user\git\sinbuya-invitation\src\main\webapp\img\invitationMobile\invitationMobile-2\main_img.png">
+			<div class="cover name">
+				<p>김철수</p>
+				and
+				<p>최영희</p>
+			</div>
+			<br>
+			<div class="cover marryAtAndHall">
+				<p>{{invitation.getMarryAt}}</p>
+				<p>{{invitation.getHall}}</p>
+			</div>
+		</section>
+		
+		<section class="invitation main">
+			<img name="icon" src="C:\Users\user\git\sinbuya-invitation\src\main\webapp\img\invitationMobile\invitationMobile-2\icon.png">
+			<h2>초대합니다</h2>
+			<div class="invitation content">
+				<span>{{invitation.getContent}}</span>
+			</div>
+			<div class="content personInfo">
+				<span>{{신랑아버님이름값}}ㆍ{{신랑어머님이름값}}?장남?{{invitation.getFname}}</span>
+				<span>{{신부아버님이름값}}ㆍ{{신부어머님이름값}}?장녀?{{invitation.getMname}}</span>
+			</div>
+			<div class="mainImg">
+				<img src="{{/invitation.getGalleriesMain}}">
+			</div>
+		</section>
+		
+		<section class="invitation calender">
+			<img src="/invitation/backgraound.png">
+			<div>캘린더 api값</div>
+		</section>
+		
+		<section class="invitation contact">
+			<img src="/invitation/backgraound.png">
+			<div class="contact telInfo">
+				<span>{{신랑아버님이름값}}ㆍ{{신랑어머님이름값}}?장남?{{invitation.getFname}}</span><img src="/invitation/telImg.png" onclick="{{invitation.getMtel}}">
+				<span>{{신부아버님이름값}}ㆍ{{신부어머님이름값}}?장녀?{{invitation.getMname}}</span><img src="/invitation/telImg.png" onclick="{{invitation.getFtel}}">
+				<span>신랑측혼주ㆍ</span>
+				<span>아버지{{신랑아버님이름값}}</span><img src="문자아이콘주소" onclick="{{신랑아버님연락처}}"><img src="전화아이콘주소" onclick="{{신랑아버님연락처}}">
+				<span>어머니{{신랑어머님이름값}}</span><img src="문자아이콘주소" onclick="{{신랑어머님연락처}}"><img src="전화아이콘주소" onclick="{{신랑아버님연락처}}">
+				<span>신부측혼주ㆍ</span>
+				<span>아버지{{신부아버님이름값}}</span><img src="문자아이콘주소" onclick="{{신부아버님연락처}}"><img src="전화아이콘주소" onclick="{{신부아버님연락처}}">
+				<span>어머니{{신부어머님이름값}}</span><img src="문자아이콘주소" onclick="{{신부어머님연락처}}"><img src="전화아이콘주소" onclick="{{신부아버님연락처}}">
+			</div>
+		</section>
+		
+		<section class="드리고싶은말씀">
+			<ime src="백그라운드이미지">
+			<div class="notice">
+				<h1>드리고 싶은 말씀</h1>
+				<span>{{드리고싶은말씀값}}</span>
+			</div>
+		</section>
+		
+		<section class="갤러리">
+			<div class="galleries">
+				{% for문으로 이미지 갯수만큼 출력 %}
+				<img src="{{이미지값}}">
+				{% endFor %}
+			</div>
+		</section>
+		
+		<section class="영상">
+			<div class="mediaUrl">{{영상주소값}}</div>
+		</section>
+		
+		<section class="오시는길">
+			<img src="백그라운드이미지">
+			<h1>오시는 길</h1>
+			<div class="addressInfo">
+			<span>{{홀값}}</span>
+			<span>{{도로명주소}}</span>
+			<span>{{지번주소}}</span>
+			<div class="map">{[맵 api}}</div>
+			<span>BUS</span>
+			<span>{{교통편버스값}}</span>
+			<span>지하철</span>
+			<span>{{교통편지하철값}}</span>
+			<span>CAR</span>
+			<span>{{교통편자가이용값}}</span>
+		</section>
+		
+		<section class="축하글">
+			<img src="백그라운드이미지">
+			<h1>축하메시지</h1>
+			<div class="messageInput">
+				<span>
+					Name:<input type="text" id="축하글쓴이">
+				</span>
+				<span>
+					Secret:<input type="text" id="비밀번호">
+				</span>
+				<span>
+					Message:<input type="text" id="메시지">
+				</span>				
+			</div>
+			<div class="축하글">
+				<span>{{축하글쓴이값}}</span>
+				<span>{{축하글내용값}}</span>
+				<span>{{축하글생성일}}</span>
+			</div>
+			<a href="스크립트로 축하글 추가">더보기</a>
+		</section>
+		
+		<section class="어카운트">
+			<div class="accountInfo">
+				<img src="백그라운드이미지">
+				<span>부득이 참석이 어려우신 분들은 축하의 마음을 전해 주세요.</span>
+				<span>{{계좌정보값}}</span>
+			</div>
+		</section>
+		
+		<section class="sns">
+			<div class="snsInfo">
+				<a id="kakao">카카오톡</a>
+				<a id="kakaoStory">카카오스토리</a>
+				<a id="facebook">페이스북</a>
+				<a id="instagram">인스타그램</a>
+			</div>
+		</section>
+	</div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}

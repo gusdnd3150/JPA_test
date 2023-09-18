@@ -1,0 +1,327 @@
+{% extends "shared/layout.default" %}
+{% block scripts %}
+	<div id="gallery" class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="pswp__bg"></div>
+		<div class="pswp__scroll-wrap">
+			<div class="pswp__container">
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+			</div>					
+			<div class="pswp__ui pswp__ui--hidden">
+				<div class="pswp__top-bar">
+					<div class="pswp__counter"></div>
+					<button class="pswp__button pswp__button--close all-close" title="Close (Esc)" style="display: none;"></button>
+					<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+					<div class="pswp__preloader">
+						<div class="pswp__preloader__icn">
+							<div class="pswp__preloader__cut">
+								<div class="pswp__preloader__donut"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+					<div class="pswp__share-tooltip"></div>
+				</div>
+				<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+				<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+				<div class="pswp__caption">
+					<div class="pswp__caption__center"></div>
+				</div>
+			</div>
+		</div>
+		<button class="pswp__button all-close reallyclose" title="Close (Esc)"></button>
+	</div>
+	
+	
+	<script type="text/javascript" src="/js/photoswipe/photoswipe.min.js"></script>
+	<script type="text/javascript" src="/js/photoswipe/photoswipe-ui-default.min.js"></script>
+<style>
+	@import url("/js/photoswipe/photoswipe.css");
+	@import url("/js/photoswipe/default-skin/default-skin.css");
+</style>	
+{% endblock %}
+{% block screen_content %}
+{% autoescape false %}
+
+<input type="hidden" class="article-id" value="{{ skin }}">
+<div class="wrapper">
+<div id="my_page" class="invitation-mobile">
+	<div class="invitation-mobile invitation">
+	
+		<section class="cover cover_page">
+					{% set year = row.marryAt | date("yyyy") %}
+					{% set month = row.marryAt | date("MM") %}
+					{% set day = row.marryAt | date("dd") %}
+					{% set week = row.marryAt | date("E") %}
+					{% set ap = row.marryAt | date("a") %}
+					{% set hour = row.marryAt | date("h") %}
+					{% set min = row.marryAt | date("mm") %}
+				<div class="cover-page cover-dateCover">	
+					<div>
+						<img class="cover-date" src="/img/invitationMobile/{{ skin }}/cover-date.png">
+					</div>	
+					<div class="eng-marryAt">
+						<span id="month">{{ month }}</span>
+						<span id="day">{{ day }}</sapn>
+					</div>
+				</div>
+				<div class="bg-img">
+					<img id="cover-img" class="cover-background" src="/app_img/thumb/{{ row.galleriesCover }}.jpg?w=1920&h=1920&t=ratio" alt>
+				</div>
+				<div class="cover cover-info">
+					<div class="cover cover_name">
+						<p>{{ row.mname }} <span>&</span> {{ row.fname }}</p>
+					</div>
+				<input id="marryHidden" type="hidden" value="{{ row.marryAt | date('yyyy-MM-dd')}}">
+				<input id="marryHidden2" type="hidden" value="{{ row.marryAt | date('yyyy-MM-dd HH:mm:ss')}}">
+					<div class="cover marryAtAndHall" id="marryAtAndHall">
+						<p class="min-{{ min }}">{{ year }}년 {{ month }}월 {{ day }}일 <span id="weekDate"></span>&nbsp;<span id="ap"></span>&nbsp;{{ hour }}시 <span id="minute">{{ min }}분</span></p>
+						<p>{{ row.hall }}</p>
+					</div>
+				</div>
+		</section>
+		
+		{% if(row.content is not empty) %}
+		<section class="invitation main">
+			<h2>INVITATION</h2>
+			<h1>당신을 초대합니다</h1>
+			<div class="invitation content pre-tag">{{ row.content }}</div>
+			<div class="main-content-galleries" style="background-image:url(/app_img/thumb/{{ row.mprofile }}.jpg?w=1920&h=1920&t=ratio);">
+			</div>
+			<div class="main-content-galleries" style="background-image:url(/app_img/thumb/{{ row.fprofile }}.jpg?w=1920&h=1920&t=ratio);">
+			</div>
+		</section>
+		{% endif %}
+		
+		{% if(galleries.size() != 0) %}
+		<section class="invitation galleries">
+			<h2>PHOTO</h2>
+			<h1>우리들의 이야기</h1>
+			{% if(row.mediaUrl is not empty) %}
+			<div class="mediaUrl">
+				<iframe src='{{ row.mediaUrl }}?rel=0&vq=hd1080' frameborder='0' allow='accelerometer; encrypted-media; gyroscope;'></iframe>
+			</div>
+			{% endif %}
+			<div class="galleries-align">
+			{% for item in galleries %}	
+			{% if(loop.index < 3) %}
+ 				<div class="galleries-content" data-page="{{ loop.index }}"
+ 					data-src="/app_img/thumb/{{ item }}.jpg?w=1920&h=1920&t=ratio">
+				</div>
+			{% endif %}	
+			{% endfor %}
+				<div class="galleries galleries-content more-galleries" data-page="0" style="{% if(galleries.size() < 4)%} display: none;{% endif %}"><span>사진 둘러보기</span></div>
+			</div>
+			<div class="hide-image">
+				{% for item in galleries %}
+				<img data-page="{{ loop.index }}" data-src="/app_img/thumb/{{item}}?w=1920&h=1920&t=ratio" src="/app_img/thumb/{{item}}?w=1920&h=1920&t=ratio">
+				{% endfor %}
+			</div>
+		</section>	
+		{% endif %}
+		
+		<section class="invitation contact">
+			<h2>CONTACT</h2>
+			<h1>연락처</h1>
+			<div class="contact telInfo">
+				<div class="telInfo contact-main" >
+					<span class="contact-m-info">
+						 신랑<span id="male-name">{{ row.mname }}</span>
+						<img class="message-call" src="/img/invitationMobile/{{ skin }}/call.png" onclick="location.href='tel:{{ row.mtel }}'">
+					</span>
+					<span class="contact-f-info">
+						 신부<span id="femals-name">{{ row.fname }}</span>
+						<img class="message-call" src="/img/invitationMobile/{{ skin }}/call.png" onclick="location.href='tel:{{ row.ftel }}'"">
+					</span>
+				</div>
+				{% if(row.parentActive) %}
+				<div id="parent-info">
+				<input id="parentchinese" type="hidden" value='{{ parent }}'>
+					<div id="m-parent">
+						<div class="parent-info1">신랑측 혼주&nbsp;&nbsp;</div> 
+						<div class="parent-info2">
+							{% if(parent.mParentMname is not empty) %}
+							<div class="parent-name">
+								아버지<span class="p-info other-theme" data-type="mParentMname"></span>
+							</div>
+							<div class="parent-img">
+								{% if(parent.mParentMtel is not empty) %}
+								<img class="message-message" src="/img/invitationMobile/{{ skin }}/message.png" onclick="location.href='sms:{{ parent.mParentMtel }}'">
+								<img class="message-call" src="/img/invitationMobile/{{ skin }}/call.png" onclick="location.href='tel:{{ parent.mParentMtel }}'">
+								{% endif %}	
+							</div>
+							{% endif %}
+							{% if(parent.mParentFname is not empty) %}
+							<div class="parent-name">
+								어머니<span class="p-info other-theme" data-type="mParentFname"></span>
+							</div>	
+							<div class="parent-img">
+								{% if(parent.mParentFtel is not empty) %}
+								<img class="message-message" src="/img/invitationMobile/{{ skin }}/message.png" onclick="location.href='sms:{{ parent.mParentFtel }}'">
+								<img class="message-call" src="/img/invitationMobile/{{ skin }}/call.png" onclick="location.href='tel:{{ parent.mParentFtel }}'">
+								{% endif %}	
+							</div>
+							{% endif %}
+						</div>
+					</div>	
+					<div class="vertical-line">
+					<hr>
+					</div>
+					<div id="f-parent">		
+						<div class="parent-info1">신부측 혼주&nbsp;&nbsp;</div>
+						<div class="parent-info2">
+							{% if(parent.fParentMname is not empty) %}
+							<div class="parent-name">아버지</div>
+							<span class="p-info other-theme" data-type="fParentMname"></span>	
+							<div class="parent-img">
+								{% if(parent.fParentMtel is not empty) %}
+								<img class="message-message" src="/img/invitationMobile/{{ skin }}/message.png" onclick="location.href='sms:{{ parent.fParentMtel }}'">
+								<img class="message-call" src="/img/invitationMobile/{{ skin }}/call.png" onclick="location.href='tel:{{ parent.fParentMtel }}'">
+								{% endif %}	
+							</div>
+							{% endif %}
+							{% if(parent.fParentFname is not empty) %}
+							<div class="parent-name">어머니</div>
+							<span class="p-info other-theme" data-type="fParentFname"></span>
+							<div class="parent-img">
+								{% if(parent.fParentFtel is not empty) %}
+								<img class="message-message" src="/img/invitationMobile/{{ skin }}/message.png" onclick="location.href='sms:{{ parent.fParentFtel }}'">
+								<img class="message-call" src="/img/invitationMobile/{{ skin }}/call.png" onclick="location.href='tel:{{ parent.fParentFtel }}';">
+								{% endif %}
+							</div>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+				{% endif %}
+			</div>
+		</section>
+		
+		{% if(row.notice is not empty) %}
+		<section class="invitation notice">
+			<h2>INFORMATION</h2>
+			<h1>전할말씀</h1>
+			<div class="notice-main pre-tag">
+				<p id="notice-content">{{ row.notice }}</p>
+			</div>
+		</section>
+		{% endif %}
+		
+		{% if(row.address1 is not empty) %}
+		<section class="invitation location">
+			<h2>LOCATION</h2>
+			<h1>오시는길</h1>
+			<div id="location-title">
+				<div id="map" {% if(row.address1 is not empty) %} class="init-map" {% endif %}>
+					<input id ="map-address1" type="hidden" value="{{ row.address1 }}">
+				</div>
+				<div class="address-info">
+					<p id="address-hall-name">{{ row.hall }}</p>
+					<p id="address-hall-address">{{ row.address1 }} {{ row.addrDetails }}</p>
+				</div>
+			</div>
+			<div id="location-sub">
+				{% if(row.bus is not empty) %}
+					<p id="location-sub-title">BUS</p>
+					<hr>
+					<p>{{ sb.replaceCrLf(row.bus) }}</p>
+					<br>
+				{% endif %}
+				{% if(row.metro is not empty) %}	
+					<p id="location-sub-title">SUBWAY</p>
+					<hr>
+					<p>{{ sb.replaceCrLf(row.metro) }}</p>
+					<br>
+				{% endif %}
+				{% if(row.car is not empty) %}	
+					<p id="location-sub-title">CAR</p>
+					<hr>
+					<p>{{ sb.replaceCrLf(row.car) }}</p>
+				{% endif %}	
+			</div>
+		</section>
+		{% endif %}
+		
+		{% if(row.celebration) %}
+		<section class="invitation celebration">
+			<h2>MESSAGE</h2>
+			<h1>축하메시지</h1>
+			<div class="celebration message-input">
+				<form id="message-form" action="/messageinput" method="POST">
+					<div id="message-input-form">
+						<span>Name :</span>
+						<input type="text" name="name" value="{{ message.name }}" autocomplete="off" maxlength="10">
+					</div>
+					<hr>
+					<div id="message-input-form">
+						<span>Password :</span>
+						<input type="password" name="password" value="{{ message.password }}" autocomplete="new-password" required maxlength="20">
+					</div>
+					<hr>
+					<div id="message-input-form">
+						<span>Message :</span>
+						<input type="text" name="content" value="{{ message.content }}" autocomplete="off">
+					</div>
+					<hr>
+					<input type="hidden" name="InvitationId" value="{{ row.id }}">
+					<button type="submit" id="message-submit">축하메시지 남기기</button>			
+				</form>
+			</div>
+			<div class="celebration message-output">
+				{% for m in message %}
+				<div class="message-details">
+					<div class="message-info">
+						<span class="message-name">{{ m.getName }}</span>
+						<span class="message-date">{{ m.getCreatedAt | date("yyyy-MM-dd") }}</span>
+					</div>
+					<div class="message-message">
+						<p>{{ m.getContent }}</p>
+					</div>
+					<div class="check-pw" id="check-pw" style="display:none;">
+							<input type="password" name="messagePassword" placeholder="비밀번호를 입력하세요." autocomplete="off" >
+							<button class="deleteSubmit" type="submit" name="deleteSubmit" data-id="{{m.id}}">삭제</button>
+					</div>
+					<a class="delete-message" id="delete-message" data-id="{{ m.id }}">x</a>
+				</div>
+				{% endfor %}
+				<button type="button" id="add-message" onClick="" style="margin-bottom: 20px;{% if(message.size() < 3)%} display: none; {% endif %}">더보기</button>
+			</div>
+		</section>
+		{% endif %}
+		
+		{% if(accounts.size() != 0) %}
+		<section class="invitation accountInfomation">
+			<div class="accountInfo">
+				<div id="account-img">
+					<span>※ 부득이 참석이 어려운 분들은 축하의 마음을 전해 주세요. ※</span>
+				</div>	
+				<div class="account-details">
+				{% for account in accounts %}
+					<p>{{ account.accountName }}&nbsp;{{ account.accountBank }}&nbsp;{{ account.accountNum }} </p>
+				{% endfor %}
+				</div>
+			</div>
+		</section>
+		{% endif %}
+		
+		<section class="invitation sns">
+			<hr id="sns-line">
+			<div class="snsInfo">
+				{% if(row.facebook) %}<a id="facebook"><img src="/img/invitationMobile/{{ skin }}/facebook.png"></a><span>│</span>{% endif %}
+				{% if(row.band) %}<a id="band"><img src="/img/invitationMobile/{{ skin }}/band.png"></a><span>│</span>{% endif %}
+				{% if(row.kakaoStory) %}<a id="kakao_story"><img src="/img/invitationMobile/{{ skin }}/kakaostory.png"></a><span>│</span>{% endif %}
+				{% if(row.kakao) %}<a id="kakao"><img src="/img/invitationMobile/{{ skin }}/kakao.png"></a>{% endif %}
+			</div>
+		</section>
+	</div>
+</div>
+</div>
+
+
+
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=1vf00f9gth&submodules=geocoder"></script>
+
+{% endautoescape %}
+{% endblock %}

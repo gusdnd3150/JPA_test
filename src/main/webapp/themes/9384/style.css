@@ -1,0 +1,1630 @@
+@charset "UTF-8";
+
+html {
+height: 100%;
+}
+
+html, body {
+	font-family: 'NanumMyeongjo';
+	font-weight: 400;
+	letter-spacing: -0.5px;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	text-stroke: 0.6px;
+	font-size: 14px;
+	height: 100%;
+	color: #333333;
+
+}
+
+.pswp__button.all-close {
+    background-position: 0 -44px;
+    z-index: 100000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;    	
+}
+
+.wrapper {
+	max-width: 640px;
+	margin: 0px auto;
+}
+
+.invitation-mobile .invitation{
+	font-family: 'NanumMyeongjo';
+	text-align: center;
+}
+
+.invitation>h1{
+	font-size: 5vw;
+	letter-spacing: 2px;
+	position: relative;
+	top: 14.7vw;
+	
+}
+
+.invitation>h2{
+	font-size: 3.5vw;
+	font-style: italic;
+	letter-spacing: 1px;
+	margin-top: 0;
+	position: relative;
+	top: 14.7vw;
+}
+
+
+#cover-img{
+	width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+#cover-title{
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 46.7vw;
+    left: 13vw;
+    z-index: 2;
+}
+
+
+#cover-galleries_cover{
+	top: 51vw;
+    right: 17.8vw;
+    width: 65%;
+    height: 37%;
+    position: absolute;
+	border-radius: 70%;
+	z-index: 1;
+	overflow: hidden;
+	display: inline-block;
+	box-shadow: inset 14px 16px 25px -5px #1010104a;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+section{
+	margin-bottom: 11vw;
+}
+
+img[name="icon"]{
+	width: 15vw;
+
+}
+
+.invitation .cover_page{
+	margin-bottom: 0;
+}
+
+.invitation .cover_page>.coverpage-wrapper{
+	text-align: center;
+	position: relative;
+}
+
+.invitation-mobile .cover_page .coverpage-wrapper .bg-img{
+	position: relative;
+}
+
+.invitation-mobile .cover_page .coverpage-wrapper .bg-img>.cover-background{
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+	
+}
+
+.invitation-mobile .cover_page .coverpage-wrapper .bg-img>.cover-title{
+	position: relative;
+}
+
+.cover .cover_name{
+	position: absolute;
+	font-size: 7vw;
+	color: #000000;
+	right: 0%;
+	left: 0%;
+	top: 50%;
+	z-index: 1;
+}
+
+
+.cover .cover_name>p{
+	text-align: center;
+	margin: 0;
+}
+
+.cover .cover_name>#figure{
+	font-style: italic;
+	font-size: 4vw;
+	margin: 4.7vw 0 4.7vw 0;
+}
+
+.cover .marryAtAndHall{
+	position: absolute;
+	font-size: 3.1vw;
+	color: #333333;
+	bottom: 11%;
+	left: 15%;
+	right: 15%;
+	z-index: 1;
+	letter-spacing: 0.45px;
+	display: inline-block;
+}
+
+.cover .marryAtAndHall>p{
+	text-align: center;
+	margin-bottom: 5px;
+	font-size: 3.1vw;
+	position: relative;
+    right: 0;
+    bottom: 3vw;
+    width: 100%;
+    letter-spacing: 0.45px;
+}
+
+.cover .marryAtAndHall>p[id="marryDay"]{
+	position: relative;
+    font-size: 3.5vw;
+    letter-spacing: 0.45px;
+}
+
+
+.cover .marryAtAndHall>p.min-00>span[id="minute"] {
+	display: none;
+}
+
+.invitation .main{
+	position: relative;
+	margin: 0;
+	letter-spacing: 0.45px;
+	background-color: #fcf6f1;
+}
+
+.invitation .main .content{
+	margin: 33.7vw 8vw 0vw 8vw;
+	padding-bottom: 11.1vw;
+	font-size: 3.5vw;
+	letter-spacing: 1px;
+	word-break: keep-all;
+	line-height: 6vw;
+}
+
+.invitation .main>.main-content-galleries{
+	width: 20vw;
+	height: 20vw;
+	display: inline-block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0vw 5vw 14.7vw 5vw;
+	border-radius: 100%;
+	box-shadow: inset 9px 7px 8px -8px #1010104a;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.invitation .galleries{
+	margin-bottom: 15.3vw;
+	letter-spacing: 1px;
+}
+
+.invitation .galleries>.mediaUrl{
+	position: relative;
+	top: 26vw;
+}
+
+.invitation .galleries>.mediaUrl iframe{
+	width: 100vw;
+	height: 52.5vw;
+	max-width: 100%;
+}
+
+
+.invitation .galleries>.galleries-align{
+	position: relative;
+	padding-top: 36vw;
+}
+
+.invitation .galleries>.galleries-align>.galleries-content {
+	width: 100%;
+    height: 49vw;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 0 1.6vw 0;
+    background-position: center;
+}
+
+.invitation .galleries>.galleries-align>.more-galleries{
+	position: relative;
+    width: 82.8vw;
+    height: 12vw;
+    background: #535353;
+    color: #fff;
+    font-size: 3.3vw;
+    padding-top: 4vw;
+    left: 0vw;
+    margin-top: 6vw;
+}
+
+.invitation .galleries>.galleries-align>.more-galleries> span{
+	display: block;
+}
+
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 640px;
+    margin: 0 auto;
+    max-height: 400px;
+}
+
+.owl-carousel .owl-item .item {
+	background: #333;
+}
+
+.owl-theme .owl-nav,
+.owl-theme .owl-dots,
+.owl-theme .owl-nav {
+	display: none;
+}
+
+.owl-galleries {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    display: none;	
+}
+
+body.galleries-open .owl-galleries{
+	display: block;
+}
+
+.owl-galleries .galleries-bg {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 10000;
+    cursor: pointer;
+    max-width: 640px;	
+}
+
+.owl-galleries .show {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 400px;
+    z-index: 10001;
+    transform: translate(-50%,-50%);	
+}
+
+.owl-galleries .show .exit-btn {
+	color: #fff;
+    z-index: 10000;
+    font-size: 30px;
+    position: absolute;
+    top: -42px;
+    right: 10px;	
+}
+
+.owl-galleries .show .show-count {
+    position: absolute;
+    top: -35px;
+    left: 10px;
+    color: #fff;
+    font-size: 18px;
+    margin: 0;	
+}
+
+
+
+.invitation .contact{
+	position: relative;
+	background-color: #fcf6f1;
+	padding: 2.5vw 0vw 5.5vw 0vw;
+	margin-bottom: 0;
+}
+
+.contact .telInfo{
+	margin: 30% 0% 0% 0%;
+	position: relative;
+    padding: 0 0 7% 0;
+    margin-bottom: 0;
+    top: 0;
+}
+
+.invitation .contact .telInfo .contact-main{
+	text-align: left;
+	margin-bottom: 18vw;
+}
+
+.contact .telInfo span{
+	margin-left: 4vw;
+}
+
+.contact .telInfo>.contact-m-info{
+	font-size: 3vw;
+	position: relative;
+	display: block;
+	text-align: center;
+}
+
+.contact .telInfo>.contact-main>.contact-m-info> span{
+	font-size: 4vw;
+	margin-left: 3vw;
+}
+
+.contact .telInfo>.contact-main>.contact-m-info>img{
+	margin-left: 5vw;
+	margin-bottom: 0.5vw;
+	width: 6vw;
+}
+
+.contact .telInfo>.contact-f-info{
+	font-size: 3vw;
+	position: relative;
+	display: block;
+	text-align: center;
+	margin-top: 7vw;
+}
+
+.contact .telInfo>.contact-main>.contact-f-info> span{
+	font-size: 4vw;
+	margin-left: 3vw;
+}
+
+.contact .telInfo>.contact-main>.contact-f-info>img{
+	margin-left: 5vw;
+	margin-bottom: 0.5vw;
+	width: 6vw;
+}
+
+.contact .telInfo::after{
+	display: block;
+	clear: both;
+	content:"";
+}
+
+
+.vertical-line{
+    background: #a86d2d;
+    width: 0.3vw;
+    padding-bottom: 51vw;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    display: -webkit-inline-box;
+    bottom:	4vw;
+	
+}
+
+.vertical-line>hr{
+	margin-top: 0px;
+    border: 0;
+    border-top: 1px solid #eee;
+    display: -webkit-inline-box;
+}
+
+.invitation .contact>.telInfo>#parent-info{
+	margin: 0vw 0vw 12vw 0vw;
+}
+
+
+.invitation .contact>.telInfo>#parent-info>#m-parent{
+	position: relative;
+    display: inline-grid;
+    margin-right: 5vw;
+    width: 40%;
+    text-align: right;
+}
+
+.invitation .contact>.telInfo>#parent-info>#m-parent>.parent-info1{
+	font-size: 3vw;
+    margin-bottom: 6vw;
+    margin-right: 3vw;
+}
+
+.invitation .contact>.telInfo>#parent-info>#m-parent>.parent-info2{
+	font-size: 3vw;
+    margin-bottom: 10px;
+}
+
+.invitation .contact>.telInfo>#parent-info>#m-parent>.parent-info2>.parent-img{
+	margin-bottom: 6vw;
+	margin-right: 1vw;
+}
+
+
+.invitation .contact>.telInfo>#parent-info>#m-parent>.parent-info2>.parent-img>.message-message{
+	width: 6vw;
+	margin-right: 4vw;
+}
+
+.invitation .contact>.telInfo>#parent-info>#m-parent>.parent-info2>.parent-img>.message-call{
+	width: 6vw;
+	margin-left: 4vw;
+}
+
+.invitation .contact>.telInfo>#parent-info>#m-parent>.parent-info2>.parent-name{
+	font-size: 3vw;
+    margin-bottom: 1.5vw;
+}
+
+.invitation .contact>.telInfo>#parent-info>#m-parent>.parent-info2>.parent-name>span{
+	font-size: 4vw;
+}
+
+
+.invitation .contact>.telInfo>#parent-info>#f-parent{
+	position: relative;
+    display: inline-grid;
+    margin-left: 5vw;
+    width: 40%;
+    text-align: left;
+}
+
+.invitation .contact>.telInfo>#parent-info>#f-parent>.parent-info1{
+	font-size: 3vw;
+    margin-bottom: 6vw;
+    margin-left: 4vw;
+}
+
+.invitation .contact>.telInfo>#parent-info>#f-parent>.parent-info2{
+	font-size: 3vw;
+    margin-bottom: 1.5vw;
+}
+
+.invitation .contact>.telInfo>#parent-info>#f-parent>.parent-info2>.parent-img{
+	margin-bottom: 6vw;
+	margin-left: 1vw;
+}
+
+.invitation .contact>.telInfo>#parent-info>#f-parent>.parent-info2>.parent-img>.message-message{
+	width: 6vw;
+	margin-right: 4vw;
+	
+}
+
+.invitation .contact>.telInfo>#parent-info>#f-parent>.parent-info2>.parent-img>.message-call{
+	width: 6vw;
+	margin-left: 4vw;
+	
+}
+
+.invitation .contact>.telInfo>#parent-info>#f-parent>.parent-info2>.parent-name{
+	font-size: 3vw;
+    margin-bottom: 1.5vw;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+}
+
+.invitation .contact>.telInfo>#parent-info>#f-parent>.parent-info2>.parent-name>span{
+	font-size: 4vw;
+	display: inline;
+	width: 70%;
+	position: relative;
+}
+
+.invitation .contact>.telInfo>#parent-info>#f-parent>.parent-info2>.p-info{
+	font-size: 4vw;
+    display: inline-flex;
+    width: 65%;
+    position: relative;
+    margin-bottom: 1.5vw;
+}
+
+
+
+.invitation .notice{
+	clear: both;
+	background-color: #ffffff;
+	margin: 0;
+	
+}
+
+
+.invitation .notice p{
+	font-size: 2.8vw;	
+	margin-top: 11.3vw;
+	line-height: 8vw;
+	padding: 10.5vw 10vw 12vw 10vw;
+	word-break: keep-all;
+
+	
+}
+
+.invitation .location{
+	background-color: #fcf6f1;
+	margin-bottom: 0;
+}
+
+
+.invitation .location>#location-title{
+	margin-top: 21vw;
+	margin-bottom: 11vw;
+}
+
+.invitation .location>#location-title>.address-info{
+	margin: 0 11vw;
+	word-break: keep-all;
+}
+
+
+.invitation .location>#location-title>.address-info>#address-hall-name{
+	font-family: NanumSquare;
+	font-weight: bold;
+	font-size: 3.3vw;
+	margin-top: 4%;
+	margin-bottom: 0.3%;
+}
+
+.invitation .location>#location-title>.address-info>#address-hall-address{
+	font-size: 3.3vw;
+	font-family: NanumSquare;
+}
+
+#map{
+	width: 100%; 
+	height: 56vw; 
+	position: relative; 
+	overflow: hidden; 
+	background: url(&quot;http://static.naver.net/maps/mantle/1x/auth_fail.png&quot;) center center / 256px 256px repeat transparent;
+	margin: 0 auto;
+	max-width: 634px;
+	max-height: 355px;
+}
+
+#map .active{
+	width: 640px; 
+	height: 440px; 
+	position: relative; 
+	overflow: hidden; 
+	background: url(&quot;http://static.naver.net/maps/mantle/1x/auth_fail.png&quot;) center center / 256px 256px repeat transparent;
+	margin: 0 auto;
+	max-width: 634px;
+	max-height: 355px;
+}
+
+.invitation .location>#location-sub{
+	position: relative;
+    text-align: center;
+    max-width: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 13vw;
+	margin-top: 35px;
+	font-size: 3.3vw;
+	font-family: 'NanumSquare';
+	word-break: keep-all;
+	
+}
+.invitation .location>#location-sub>hr{
+    margin-top: -1vw;
+    margin-bottom: 2vw;
+    border: 0;
+    border-top: 2px solid #000;
+    width: 4vw;
+}
+
+.invitation .location>#location-sub>#location-sub-title{
+	font-weight: bold;
+}
+	
+.invitation .celebration{
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+    padding-bottom: 6.5vw;
+    background-color: #ffffff;
+}
+	
+
+input[type = text]{
+	width: 76.2%;
+	height: 43px;
+	padding: 5px 6px;
+	margin: 0px 0;
+	display: inline-block;
+	border: none;
+	box-sizing: border-box;
+	background: transparent; 
+	
+	}
+	
+input[name="password"]{
+	clear: both;
+	width: 50%;
+    height: 43px;
+    padding: 5px 6px;
+    margin: 0px 0;
+    border: none;
+    display: inline-block;
+	background: transparent; 
+
+}
+	
+input:-webkit-autofill {
+   -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+	
+	
+.invitation .celebration .message-input hr{
+	width: 540px;
+	margin-top: -10px;
+    margin-bottom: 20px;
+    border-top: 2px solid #dadada;
+    max-width: 90%;
+}
+
+.invitation .celebration>.message-input{
+	position: relative;
+	font-size: 20px;
+	color: #bdbdbd;
+	margin-top: 21vw;
+	padding-top: 0;
+
+}
+
+button[type = submit]{
+	width: 90%;
+	height: 10vw;
+	font-family: 'NanumSquare';
+	font-size: 3.4vw;
+	background-color: #828181;
+	border: none;
+	border-radius: 12px;
+	color: #ffffff;
+	margin-top: 5vw;
+}
+
+.invitation .celebration>.message-input>#message-form{
+	max-width: 93%;
+	margin: 0 auto;
+	margin-top: 11vw;
+}
+
+
+.invitation .celebration .message-input #message-input-form{
+	text-align: left;
+	padding: 0px 0px 1% 5%;
+}
+
+
+.invitation .celebration .message-input span{
+	font-size: 3.1vw;
+	color: #767575;
+}
+
+button[name="deleteSubmit"]{
+	width: 20%;
+	height: 8vw;
+	font-family: 'NanumSquare';
+	font-size: 3.4vw;
+	color: #a7a7a7;
+	background-color: #f1f1f1;
+	border: none;
+	border-radius: 8px;
+}
+
+.invitation .celebration>.message-output{
+	font-size:13px;
+	margin-top: 3vw;
+}
+
+.invitation .celebration.message-output .message-details{
+	border: 1px solid #dadada;
+	width: 84%;
+	height: auto;
+	margin: 20px auto;
+	font-size: 3.4vw;
+	max-width: 78%;
+    min-height: 58px;
+}
+
+.invitation .celebration.message-output .message-details>.message-info{
+	margin: 10px;
+}
+
+.invitation .celebration.message-output .message-details>.message-info::after{
+	display: block;
+	content: '';
+	clear: both;
+}
+
+.invitation .celebration.message-output .message-details>.message-info>.message-name{
+	float: left;
+}
+
+.invitation .celebration.message-output .message-details>.message-info>.message-date{
+	float: right;
+}
+
+.invitation .celebration.message-output .message-details>.message-message{
+	text-align: start;
+	padding: 10px;
+}
+
+.invitation .celebration.message-output .message-details>.delete-message{
+	position: relative;
+    display: inline-block;
+    margin-left: 95%;
+    font-size: 4vw;
+}
+
+.invitation .celebration>.message-output button[type="button"]{
+	width: 25%;
+	height: 10vw;
+	font-family: 'NanumSquare';
+	font-size: 3.4vw;
+	background-color: #828181;
+	border: none;
+	border-radius: 12px;
+	color: #ffffff
+}
+
+.invitation .accountInfomation{
+	padding-top: 15vw;
+	padding-bottom: 16vw;
+	background-color: #ffffff;
+	margin-bottom: 0px;
+}
+
+
+.invitation .accountInfo>.account-details{
+	font-size: 20px;
+}
+
+
+.invitation .accountInfomation>.accountInfo>#account-img{
+	position: relative;
+	margin: 0 50px;
+}
+
+
+.invitation .accountInfomation>.accountInfo> img{
+	margin-bottom: 2%;
+	max-width: 77%;
+	
+}
+
+.invitation .accountInfomation>.accountInfo>#account-img>span{
+	font-family: 'NanumSquare';
+	font-size: 3vw;
+	display: block;
+	margin: -1% 0% 4% 0%;
+}
+
+.invitation .accountInfomation>.accountInfo>.account-details>p{
+	font-family: 'NanumSquare';
+	font-size: 2.8vw;
+	margin-bottom: 1vw;
+}
+
+.invitation-mobile .invitation.sns>hr[id="sns-line"]{
+	width: 84%;
+	margin-top: -2vw;
+    margin-bottom: 3vw;
+    border-top: 1px solid #939498;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.invitation .sns{
+	font-family: 'NanumSquare';
+	padding: 0 0 3% 0;
+	background-color: #ffffff;
+}
+
+.invitation .snsInfo>a{
+	margin-left: 4%;
+	margin-right: 4%;
+	color: #565656;
+	display: inline-block;
+	font-size: 2.5vw;
+	
+}
+
+.invitation .snsInfo>span{
+	font-size: 5vw;
+    position: relative;
+    top: 1vw;
+    color: #939498;
+}
+
+.invitation .snsInfo>a>img{
+	width: 9vw;
+}
+
+
+
+@media screen and (min-width: 641px) {
+
+
+	
+	html {
+		height: 100%;
+	}
+	
+	html, body {
+		font-family: 'NanumMyeongjo';
+		font-weight: 400;
+		letter-spacing: -0.5px;
+		-webkit-font-smoothing: antialiased;
+		font-smoothing: antialiased;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+		text-stroke: 0.6px;
+		font-size: 14px;
+		height: 100%;
+		color: #454545;
+	
+	}
+	
+	.wrapper {
+		max-width: 640px;
+		margin: 0px auto;
+	}
+	
+	.invitation-mobile .invitation{
+		font-family: 'NanumMyeongjo';
+		text-align: center;
+	}
+	
+	.invitation>h1{
+		font-size: 32px;
+		letter-spacing: 2px;
+		position: relative;
+		top: 94px;
+		
+	}
+	
+	.invitation>h2{
+		font-size: 22.5px;
+		font-style: italic;
+		letter-spacing: 1px;
+		margin-top: 0;
+		position: relative;
+		top: 94px;
+	}
+	
+	
+	#cover-img{
+		width: 640px;
+	    height: auto;
+	    position: relative;
+	    z-index: 1;
+	}
+	
+	#cover-title{
+	    width: 448px;
+	    height: auto;
+	    position: absolute;
+	    top: 299px;
+	    left: 83px;
+	    z-index: 2;
+	}
+	
+	
+	#cover-galleries_cover{
+		top: 326px;
+	    right: 114px;
+	    width: 65%;
+	    height: 37%;
+	    position: absolute;
+		border-radius: 70%;
+		z-index: 1;
+		overflow: hidden;
+		display: inline-block;
+		box-shadow: inset 14px 16px 25px -5px #1010104a;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	
+	section{
+		margin-bottom: 70.5px;
+	}
+	
+	img[name="icon"]{
+		width: 15vw;
+	
+	}
+	
+	.invitation .cover_page{
+		margin-bottom: 0;
+	}
+	
+	.invitation .cover_page>.coverpage-wrapper{
+		text-align: center;
+		position: relative;
+	}
+	
+	.invitation-mobile .cover_page .coverpage-wrapper .bg-img{
+		position: relative;
+	}
+	
+	.invitation-mobile .cover_page .coverpage-wrapper .bg-img>.cover-background{
+		position: relative;
+		text-align: center;
+		margin: 0 auto;
+		
+	}
+	
+	.invitation-mobile .cover_page .coverpage-wrapper .bg-img>.cover-title{
+		position: relative;
+	}
+	
+	.cover .cover_name{
+		position: absolute;
+		font-size: 45.5px;
+		color: #000000;
+		right: 0%;
+		left: 0%;
+		top: 50%;
+		z-index: 1;
+	}
+	
+	
+	.cover .cover_name>p{
+		text-align: center;
+		margin: 0;
+	}
+	
+	.cover .cover_name>#figure{
+		font-style: italic;
+		font-size: 26px;
+		margin: 30px 0 30px 0;
+	}
+	
+	.cover .marryAtAndHall{
+		position: absolute;
+		font-size: 19.8px;
+		color: #333333;
+		bottom: 130px;
+		z-index: 1;
+		letter-spacing: 0.45px;
+		display: inline-block;
+	}
+	
+	.cover .marryAtAndHall>p{
+		text-align: center;
+		margin-bottom: 5px;
+		font-size: 19.8px;
+		position: relative;
+	    right: 0;
+	    bottom: 15.5px;
+	    width: 100%;
+	    letter-spacing: 0.45px;
+	}
+	
+	
+	.cover .marryAtAndHall>p[id="marryDay"]{
+		position: relative;
+	    font-size: 22.5px;
+	    letter-spacing: 0.45px;
+	}
+	
+	
+	.cover .marryAtAndHall>p.min-00>span[id="minute"] {
+		display: none;
+	}
+	
+	.invitation .main{
+		position: relative;
+		margin: 0;
+		letter-spacing: 0.45px;
+		background-color: #fcf6f1;
+	}
+	
+	.invitation .main .content{
+		margin: 216px 51px 0px 51px;
+		padding-bottom: 71px;
+		font-size: 22.4px;
+		letter-spacing: 1px;
+		word-break: keep-all;
+		line-height: 38px;
+	}
+	
+	.invitation .main>.main-content-galleries{
+		width: 128px;
+		height: 128px;
+		display: inline-block;
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin: 0px 32.5px 93px 32.5px;
+		border-radius: 100%;
+		box-shadow: inset 9px 7px 8px -8px #1010104a;
+		background-size: cover;
+		background-position: center;
+	}
+	
+	
+	.invitation .galleries{
+		margin-bottom: 98px;
+		letter-spacing: 1px;
+	}
+	
+	.invitation .galleries>.mediaUrl{
+		position: relative;
+		top: 167px;
+	}
+	
+	.invitation .galleries>.mediaUrl iframe{
+		width: 640px;
+		height: 336px;
+		max-width: 100%;
+	}
+	
+	
+	.invitation .galleries>.galleries-align{
+		position: relative;
+		padding-top: 231px;
+	}
+	
+	.invitation .galleries>.galleries-align>.galleries-content {
+		width: 100%;
+	    height: 313px;
+	    display: inline-block;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    margin: 0 0 11px 0;
+	    background-position: center;
+	}
+	
+	.invitation .galleries>.galleries-align>.more-galleries{
+		position: relative;
+	    width: 530px;
+	    height: 78px;
+	    background: #535353;
+	    color: #fff;
+	    font-size: 21px;
+	    padding-top: 26px;
+	    left: 0;
+	    margin-top: 38px;
+	}
+	
+	.invitation .galleries>.galleries-align>.more-galleries> span{
+		display: block;
+	}
+	
+	.owl-galleries, .owl-galleries .galleries-bg {
+    	left: auto;
+	}
+	
+	.invitation .contact{
+		position: relative;
+		background-color: #fcf6f1;
+		padding: 19.25px 0 42px 0;
+		margin-bottom: 0;
+	}
+	
+	.contact .telInfo{
+		margin: 30% 0% 0% 0%;
+		position: relative;
+	    padding: 0 0 45px 0;
+	    margin-bottom: 0;
+	    top: 0;
+	}
+	
+	.invitation .contact .telInfo .contact-main{
+		text-align: left;
+		margin-bottom: 115px;
+	}
+	
+	.contact .telInfo span{
+		margin-left: 26px;
+	}
+	
+	.contact .telInfo>.contact-m-info{
+		font-size: 19px;
+		position: relative;
+		display: block;
+		text-align: center;
+	}
+	
+	.contact .telInfo>.contact-main>.contact-m-info> span{
+		font-size: 26px;
+		margin-left: 19px;
+	}
+	
+	.contact .telInfo>.contact-main>.contact-m-info>img{
+		margin-left: 32px;
+		margin-bottom: 0.5vw;
+		width: 38px;
+	}
+	
+	.contact .telInfo>.contact-f-info{
+		font-size: 19px;
+		position: relative;
+		display: block;
+		text-align: center;
+		margin-top: 51px;
+	}
+	
+	.contact .telInfo>.contact-main>.contact-f-info> span{
+		font-size: 26px;
+		margin-left: 19px;
+	}
+	
+	.contact .telInfo>.contact-main>.contact-f-info>img{
+		margin-left: 32px;
+		margin-bottom: 4px;
+		width: 38px;
+	}
+	
+	.contact .telInfo::after{
+		display: block;
+		clear: both;
+		content:"";
+	}
+	
+	
+	.vertical-line{
+	    background: #a86d2d;
+	    width: 2px;
+	    padding-bottom: 327px;
+	    margin: 0;
+	    text-align: center;
+	    position: relative;
+	    display: -webkit-inline-box;
+	    bottom:	26px;
+		
+	}
+	
+	.vertical-line>hr{
+		margin-top: 0px;
+	    border: 0;
+	    border-top: 1px solid #eee;
+	    display: -webkit-inline-box;
+	}
+	
+	.invitation .contact>.telInfo>#parent-info{
+		margin: 0px 0px 77px 0px;
+	}
+	
+	
+	.invitation .contact>.telInfo>#parent-info>#m-parent{
+		position: relative;
+	    display: inline-grid;
+	    margin-right: 32px;
+	}
+	
+	.invitation .contact>.telInfo>#parent-info>#m-parent>.parent-info1{
+		font-size: 19px;
+	    margin-bottom: 38px;
+	}
+	
+	.invitation .contact>.telInfo>#parent-info>#m-parent>.parent-info2{
+		font-size: 19px;
+	    margin-bottom: 10px;
+	}
+	
+	.invitation .contact>.telInfo>#parent-info>#m-parent>.parent-info2>.parent-img{
+		margin-bottom: 38px;
+	}
+	
+	
+	.invitation .contact>.telInfo>#parent-info>#m-parent>.parent-info2>.parent-img>.message-message{
+		width: 38px;
+		margin-right: 26px;
+	}
+	
+	.invitation .contact>.telInfo>#parent-info>#m-parent>.parent-info2>.parent-img>.message-call{
+		width: 38px;
+		margin-left: 26px;
+	}
+	
+	.invitation .contact>.telInfo>#parent-info>#m-parent>.parent-info2>.parent-name{
+		font-size: 19px;
+	    margin-bottom: 10px;
+	}
+	
+	.invitation .contact>.telInfo>#parent-info>#m-parent>.parent-info2>.parent-name>span{
+		font-size: 26px;
+	}
+	
+	
+	.invitation .contact>.telInfo>#parent-info>#f-parent{
+		position: relative;
+	    display: inline-grid;
+	    margin-left: 32px;
+	    width: 40%;
+	    text-align: left;
+	}
+	
+	.invitation .contact>.telInfo>#parent-info>#f-parent>.parent-info1{
+		font-size: 19px;
+	    margin-bottom: 38px;
+	    margin-left: 25.5px;
+	}
+	
+	.invitation .contact>.telInfo>#parent-info>#f-parent>.parent-info2{
+		font-size: 19px;
+	    margin-bottom: 10px;
+	}
+	
+	.invitation .contact>.telInfo>#parent-info>#f-parent>.parent-info2>.parent-name{
+		font-size: 19px;
+	    margin-bottom: 7px;
+	    text-align: left;
+	    position: relative;
+	    display: inline-block;
+	}
+	
+	.invitation .contact>.telInfo>#parent-info>#f-parent>.parent-info2>.p-info{
+		font-size: 25.6px;
+		display: inline-flex;
+	    width: 65%;
+	    position: relative;
+	    margin-bottom: 9.5px;
+	
+	}
+	
+	.invitation .contact>.telInfo>#parent-info>#f-parent>.parent-info2>.parent-img{
+		margin-bottom: 38px;
+	}
+	
+	.invitation .contact>.telInfo>#parent-info>#f-parent>.parent-info2>.parent-img>.message-message{
+		width: 38px;
+		margin-right: 26px;
+		
+	}
+	
+	.invitation .contact>.telInfo>#parent-info>#f-parent>.parent-info2>.parent-img>.message-call{
+		width: 38px;
+		margin-left: 26px;
+		
+	}
+	
+	.invitation .contact>.telInfo>#parent-info>#f-parent>.parent-info2>.parent-name{
+		font-size: 19px;
+	    margin-bottom: 10px;
+	}
+	
+	.invitation .contact>.telInfo>#parent-info>#f-parent>.parent-info2>.parent-name>span{
+		font-size: 26px;
+	}
+	
+	
+	.invitation .notice{
+		clear: both;
+		background-color: #ffffff;
+		margin: 0;
+		
+	}
+	
+	
+	.invitation .notice p{
+		font-size: 18.3px;	
+		margin-top: 73.1px;
+		line-height: 52px;
+		padding: 67px 65px 77px 65px;
+		word-break: keep-all;
+		
+	}
+	
+	.invitation .location{
+		background-color: #fcf6f1;
+		margin-bottom: 0;
+	}
+	
+	
+	.invitation .location>#location-title{
+		margin-top: 135px;
+		margin-bottom: 70.5px;
+	}
+	
+	.invitation .location>#location-title>.address-info {
+    	margin: 0 71.5px;
+	}
+	
+	.invitation .location>#location-title>.address-info>#address-hall-name{
+		font-family: NanumSquare;
+		font-weight: bold;
+		font-size: 21px;
+		margin-top: 4%;
+		margin-bottom: 0.3%;
+	}
+	
+	.invitation .location>#location-title>.address-info>#address-hall-address{
+		font-size: 21px;
+		font-family: NanumSquare;
+	}
+	
+	#map{
+		width: 100%; 
+		height: 56vw; 
+		position: relative; 
+		overflow: hidden; 
+		background: url(&quot;http://static.naver.net/maps/mantle/1x/auth_fail.png&quot;) center center / 256px 256px repeat transparent;
+		margin: 0 auto;
+		max-width: 634px;
+		max-height: 355px;
+	}
+	
+	#map .active{
+		width: 640px; 
+		height: 440px; 
+		position: relative; 
+		overflow: hidden; 
+		background: url(&quot;http://static.naver.net/maps/mantle/1x/auth_fail.png&quot;) center center / 256px 256px repeat transparent;
+		margin: 0 auto;
+		max-width: 634px;
+		max-height: 355px;
+	}
+	
+	.invitation .location>#location-sub{
+		position: relative;
+	    text-align: center;
+	    max-width: 100%;
+	    padding-left: 70.5px;
+	    padding-right: 70.5px;
+	    padding-bottom: 83px;
+		margin-top: 35px;
+		font-size: 21px;
+		font-family: 'NanumSquare';
+		word-break: keep-all;
+		
+	}
+	.invitation .location>#location-sub>hr{
+	    margin-top: -6.5px;
+	    margin-bottom: 13px;
+	    border: 0;
+	    border-top: 2px solid #000;
+	    width: 26px;
+	}
+	
+	.invitation .location>#location-sub>#location-sub-title{
+		font-weight: bold;
+	}
+		
+	.invitation .celebration{
+		padding-top: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+	    padding-bottom: 42px;
+	}
+		
+	
+	input[type = text]{
+		width: 76.2%;
+		height: 43px;
+		padding: 5px 6px;
+		margin: 0px 0;
+		display: inline-block;
+		border: none;
+		box-sizing: border-box;
+		background: transparent; 
+		
+		}
+		
+	input[name="password"]{
+		clear: both;
+		width: 50%;
+	    height: 43px;
+	    padding: 5px 6px;
+	    margin: 0px 0;
+	    border: none;
+	    display: inline-block;
+		background: transparent; 
+	
+	}
+		
+	input:-webkit-autofill {
+	   -webkit-box-shadow: 0 0 0 1000px white inset;
+	}
+		
+		
+	.invitation .celebration .message-input hr{
+		width: 540px;
+		margin-top: -10px;
+	    margin-bottom: 20px;
+	    border-top: 2px solid #dadada;
+	    max-width: 90%;
+	}
+	
+	.invitation .celebration>.message-input{
+		position: relative;
+		font-size: 20px;
+		color: #bdbdbd;
+		margin-top: 134px;
+		padding-top: 0;
+	
+	}
+	
+	button[type = submit]{
+		width: 90%;
+		height: 65px;
+		font-family: 'NanumSquare';
+		font-size: 22px;
+		background-color: #828181;
+		border: none;
+		border-radius: 12px;
+		color: #ffffff;
+		margin-top: 32px;
+	}
+	
+	.invitation .celebration>.message-input>#message-form{
+		max-width: 93%;
+		margin: 0 auto;
+		margin-top: 70.5px;
+	}
+	
+	
+	.invitation .celebration .message-input #message-input-form{
+		text-align: left;
+		padding: 0px 0px 1% 5%;
+	}
+	
+	
+	.invitation .celebration .message-input span{
+		font-size: 20px;
+		color: #767575;
+	}
+	
+	button[name="deleteSubmit"]{
+		width: 20%;
+		height: 52px;
+		font-family: 'NanumSquare';
+		font-size: 22px;
+		color: #a7a7a7;
+		background-color: #f1f1f1;
+		border: none;
+		border-radius: 8px;
+	}
+	
+	.invitation .celebration>.message-output{
+		font-size:13px;
+		margin-top: 19.5px;
+	}
+	
+	.invitation .celebration.message-output .message-details{
+		border: 1px solid #dadada;
+		width: 540px;
+		height: auto;
+		margin: 20px auto;
+		font-size: 21px;
+		max-width: 78%;
+	    min-height: 58px;
+	}
+	
+	.invitation .celebration.message-output .message-details>.message-info{
+		margin: 10px;
+	}
+	
+	.invitation .celebration.message-output .message-details>.message-info::after{
+		display: block;
+		content: '';
+		clear: both;
+	}
+	
+	.invitation .celebration.message-output .message-details>.message-info>.message-name{
+		float: left;
+	}
+	
+	.invitation .celebration.message-output .message-details>.message-info>.message-date{
+		float: right;
+	}
+	
+	.invitation .celebration.message-output .message-details>.message-message{
+		text-align: start;
+		padding: 10px;
+	}
+	
+	.invitation .celebration.message-output .message-details>.delete-message{
+		position: relative;
+	    display: inline-block;
+	    margin-left: 95%;
+	    font-size: 26px;
+	}
+	
+	.invitation .celebration>.message-output button[type="button"]{
+		width: 25%;
+		height: 65px;
+		font-family: 'NanumSquare';
+		font-size: 22px;
+		background-color: #828181;
+		border: none;
+		border-radius: 12px;
+		color: #ffffff
+	}
+	
+	.invitation .accountInfomation{
+		padding-top: 96px;
+		padding-bottom: 103px;
+		background-color: #ffffff;
+		margin-bottom: 0px;
+	}
+	
+	
+	.invitation .accountInfo>.account-details{
+		font-size: 20px;
+	}
+	
+	
+	.invitation .accountInfomation>.accountInfo>#account-img{
+		position: relative;
+		margin: 0 50px;
+	}
+	
+	
+	.invitation .accountInfomation>.accountInfo> img{
+		margin-bottom: 2%;
+		max-width: 77%;
+		
+	}
+	
+	.invitation .accountInfomation>.accountInfo>#account-img>span{
+		font-family: 'NanumSquare';
+		font-size: 19px;
+		display: block;
+		margin: -1% 0% 4% 0%;
+	}
+	
+	.invitation .accountInfomation>.accountInfo>.account-details>p{
+		font-family: 'NanumSquare';
+		font-size: 18px;
+		margin-bottom: 6.5px;
+	}
+	
+	.invitation-mobile .invitation.sns>hr[id="sns-line"]{
+		width: 84%;
+		margin-top: -13px;
+	    margin-bottom: 19px;
+	    border-top: 1px solid #939498;
+	    max-width: 100%;
+	    height: auto;
+	}
+	
+	
+	
+	.invitation .sns{
+		font-family: 'NanumSquare';
+		padding: 0 0 3% 0;
+		background-color: #ffffff;
+	}
+	
+	.invitation .snsInfo>a{
+		margin-left: 4%;
+		margin-right: 4%;
+		color: #565656;
+		display: inline-block;
+		font-size: 2.5vw;
+		
+	}
+	
+	.invitation .snsInfo>span{
+		font-size: 32px;
+	    position: relative;
+	    top: 2px;
+	    color: #939498;
+	}
+	
+	.invitation .snsInfo>a>img{
+		width: 57.5px;
+	}
+}
+
+.pre-tag{
+	white-space: pre-wrap;
+}

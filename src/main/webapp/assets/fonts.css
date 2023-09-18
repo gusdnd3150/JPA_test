@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 100;
+    src: url(../fonts/notokr-thin.eot);
+    src: url(../fonts/notokr-thin.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/notokr-thin.woff2) format('woff2'),
+    url(../fonts/notokr-thin.woff) format('woff'),
+    url(../fonts/notokr-thin.ttf) format('truetype'),
+    url(../fonts/notokr-thin.svg#notokr-thin) format('svg');
+}
+@font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/notokr-light.eot);
+    src: url(../fonts/notokr-light.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/notokr-light.woff2) format('woff2'),
+    url(../fonts/notokr-light.woff) format('woff'),
+    url(../fonts/notokr-light.ttf) format('truetype'),
+    url(../fonts/notokr-light.svg#notokr-light) format('svg');
+}
+@font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/notokr-regular.eot);
+    src: url(../fonts/notokr-regular.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/notokr-regular.woff2) format('woff2'),
+    url(../fonts/notokr-regular.woff) format('woff'),
+    url(../fonts/notokr-regular.ttf) format('truetype'),
+    url(../fonts/notokr-regular.svg#notokr-regular) format('svg');
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/notokr-medium.eot);
+    src: url(../fonts/notokr-medium.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/notokr-medium.woff2) format('woff2'),
+    url(../fonts/notokr-medium.woff) format('woff'),
+    url(../fonts/notokr-medium.ttf) format('truetype'),
+    url(../fonts/notokr-medium.svg#notokr-medium) format('svg');
+}
+@font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 900;
+    src: url(../fonts/notokr-bold.eot);
+    src: url(../fonts/notokr-bold.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/notokr-bold.woff2) format('woff2'),
+    url(../fonts/notokr-bold.woff) format('woff'),
+    url(../fonts/notokr-bold.ttf) format('truetype'),
+    url(../fonts/notokr-bold.svg#notokr-bold) format('svg');
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/MyriadPro-Regular.eot);
+    src: url(../fonts/MyriadPro-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/MyriadPro-Regular.woff) format('woff'),
+    url(../fonts/MyriadPro-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/MyriadPro-Bold.eot);
+    src: url(../fonts/MyriadPro-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/MyriadPro-Bold.woff) format('woff'),
+    url(../fonts/MyriadPro-Bold.ttf) format('truetype');
+}
+
+@font-face{
+	font-family: 'bebasneue';
+	src: url(../font/BebasNeue-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'NanumSquare';
+	font-style: normal;
+	font-weight: 300;
+	src: url(../fonts/NanumSquareL.eot) format('truetype');
+    src: url(../fonts/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NanumSquareL.woff) format('woff'),
+    url(../fonts/NanumSquareL.ttf) format('truetype');	
+}
+
+@font-face {
+	font-family: 'NanumSquare';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/NanumSquareR.eot) format('truetype');
+    src: url(../fonts/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NanumSquareR.woff) format('woff'),
+    url(../fonts/NanumSquareR.ttf) format('truetype');	
+}
+
+@font-face {
+	font-family: 'NanumSquare';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/NanumSquareB.eot) format('truetype');
+    src: url(../fonts/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NanumSquareB.woff) format('woff'),
+    url(../fonts/NanumSquareB.ttf) format('truetype');	
+}
+
+@font-face {
+	font-family: 'NanumSquare';
+	font-style: normal;
+	font-weight: 800;
+	src: url(../fonts/NanumSquareEB.eot) format('truetype');
+    src: url(../fonts/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NanumSquareEB.woff) format('woff'),
+    url(../fonts/NanumSquareEB.ttf) format('truetype');	
+}
+
+@font-face {
+    font-family: 'Gmarket';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/gmarket/GmarketSansLight.otf) format('opentype');
+    src: url(../fonts/gmarket/GmarketSansLight.otf?#iefix) format('opentype'),
+    url(../fonts/gmarket/GmarketSansTTFLight.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Gmarket';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/gmarket/GmarketSansMedium.otf) format('opentype');
+    src: url(../fonts/gmarket/GmarketSansMedium.otf?#iefix) format('opentype'),
+    url(../fonts/gmarket/GmarketSansTTFMedium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Gmarket';
+    font-style: normal;
+    font-weight: 800;
+    src: url(../fonts/gmarket/GmarketSansBold.otf) format('opentype');
+    src: url(../fonts/gmarket/GmarketSansBold.otf?#iefix) format('opentype'),
+    url(../fonts/gmarket/GmarketSansTTFBold.ttf) format('truetype');
+}
+
+@font-face{
+	font-family: 'NanumMyeongjo';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/myeongjo/NanumMyeongjo.otf) format('opentype');
+    src: url(../fonts/myeongjo/NanumMyeongjo.otf?#iefix) format('opentype'),
+    url(../fonts/myeongjo/NanumMyeongjo.ttf) format('truetype');
+    
+}
+
+@font-face{
+	font-family: 'NanumMyeongjo';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/myeongjo/NanumMyeongjoBold.otf) format('opentype');
+    src: url(../fonts/myeongjo/NanumMyeongjoBold.otf?#iefix) format('opentype'),
+    url(../fonts/myeongjo/NanumMyeongjoBold.ttf) format('truetype');
+}
+
+@font-face{
+	font-family: 'NanumMyeongjo';
+    font-style: normal;
+    font-weight: 800;
+    src: url(../fonts/myeongjo/NanumMyeongjoExtraBold.otf) format('opentype');
+    src: url(../fonts/myeongjo/NanumMyeongjoExtraBold.otf?#iefix) format('opentype'),
+    url(../fonts/myeongjo/NanumMyeongjoExtraBold.ttf) format('truetype');
+}

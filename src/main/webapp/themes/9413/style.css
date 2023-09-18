@@ -1,0 +1,1762 @@
+@charset "UTF-8";
+
+html {
+	height: 100%;
+}
+
+html, body {
+	font-family: 'NanumMyeongjo';
+	font-weight: 400;
+	letter-spacing: 1px;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	text-stroke: 0.6px;
+	font-size: 14px;
+	height: 100%;
+	word-bradk: keep-all; /* 윤주추가 */
+}
+
+.pswp__button.all-close {
+    background-position: 0 -44px;
+    z-index: 100000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;    	
+}
+
+.wrapper {
+	max-width: 640px;
+	margin: 0px auto;
+	width: 100%;
+}
+
+.invitation-mobile .invitation{
+	font-family: 'NanumSquare';
+	text-align: center;
+}
+
+#cover-img{
+	width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#cover-title{
+    width: 36%;
+    height: auto;
+    position: relative;
+    margin: 17.8vw 0 4.4vw 0;
+}
+
+
+#cover-galleries_cover{
+    right: 0;
+    width: 100%;
+    height: auto; 
+    position: relative;
+
+}
+
+#marry-text{
+	width: 36%;
+	margin: 7vw 0 14vw 0;
+}
+
+section{
+	margin-bottom: 11vw;
+}
+
+img[name="icon"]{
+	width: 30%;
+
+}
+.cover_page{
+	margin-bottom: 0vw;
+	font-family: 'NanumSquare';
+}
+
+
+.invitation .cover_page>.coverpage-wrapper{
+	text-align: center;
+	position: relative;
+}
+
+.invitation-mobile .cover_page .coverpage-wrapper .bg-img{
+	position: relative;
+	background-image: url(/img/invitationMobile/9413/cover-bgImg.png);
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+}
+
+.invitation-mobile .cover_page .coverpage-wrapper .bg-img>.cover-background{
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+	
+}
+
+.invitation-mobile .cover_page .coverpage-wrapper .bg-img>.cover-title{
+	position: relative;
+}
+
+.cover .cover_name{
+    font-size: 3vw;
+    color: #404140;
+    margin-bottom: 4.8vw;
+    display: inline-block;
+}
+
+.cover .cover_name>p{
+	margin: 1vw;
+	font-size: 4.5vw;
+	font-weight: 600;
+}
+
+.cover .marryAtAndHall{
+    position: relative;
+    font-size: 3.7vw;
+    width: 100%;
+    text-align: center;
+    padding: 0 17vw;
+}
+
+.cover .marryAtAndHall>img {
+	width: 5%;
+}
+
+.cover .marryAtAndHall>p{
+    text-align: left;
+    font-size: 3.2vw;
+    margin: 0;
+    margin-top: 3vw;
+    word-break: keep-all;
+}
+
+.cover .coverpage-wrapper p[id="marryDay"]{
+    position: relative;
+    right: 0vw;
+    font-size: 3.7vw;
+    letter-spacing: 1px;
+    margin: 7vw 0 2vw 0;
+    color: #a52221;
+    font-weight: 600;
+}
+
+
+.cover .marryAtAndHall>p.min-00{
+	display: inline-block;
+}
+
+
+.cover .marryAtAndHall>p.min-00>span[id="minute"] {
+	display: none;
+}
+
+.cover>.coverpage-wrapper>.bg-img>#cover-icon{
+    width: 3%;
+    position: absolute;
+    bottom: 34vw;
+    left: 19vw;
+}
+
+.invitation .main{
+	position: relative;
+	margin-top: 11%;
+	margin-bottom: 0%;
+}
+
+.invitation .main .content{
+	margin-top: 19%;
+	margin-bottom: 20%;
+	font-size: 3.4vw;
+    padding: 0% 15% 0% 15%;
+	line-height: 190%;
+	word-break: keep-all;
+}
+
+.invitation .main>.mainImg{
+	margin-top: 100px;
+}
+
+.invitation .main>.mainImg>#galleries-main{
+	width: 100%;
+}
+
+.invitation .calendar{
+	background-color: #eee4d7;
+	position: relative;
+}
+
+#tbCalendarYM{
+	font-size: 6.6vw;
+}
+
+.invitation .calendar>.calendar-info{
+    padding-top: 10vw;
+    padding-bottom: 5vw;
+}
+
+.invitation .calendar>.calendar-info>.calender-api{
+	background-color: #eee4d7;
+    position: relative;
+    
+}
+
+.invitation .calendar>.calendar-api>#calendar>tr, td{
+	font-size: 2.8vw;
+	padding: 3.4vw;
+	max-width: 100%;
+	
+}
+
+.invitation .calendar>.calendar-info>.calender-api>#calendar{
+	margin: o auto;
+	text-align: center;
+}
+
+.invitation .contact{
+	position: relative;
+	margin: 0;
+	padding-top: 12.5vw;
+	padding-bottom: 11vw;
+	background-color: #eceae7;
+}
+
+.contact .telInfo{
+	margin: 0%;
+	padding-bottom: 0;
+}
+
+.invitation .contact .telInfo .contact-main{
+	text-align: left;
+}
+
+.contact .telInfo span{
+	margin-left: 4vw;
+}
+
+.contact .telInfo>.contact-m-info{
+	font-size: 3vw;
+	position: relative;
+	margin-left: 11.2vw;
+}
+
+.contact .telInfo>.contact-main>.contact-m-info> span{
+	font-size: 4vw;
+	margin-left: 3vw;
+}
+
+.contact .telInfo>.contact-main>.contact-m-info>img{
+	margin-left: 5vw;
+	margin-bottom: 0.5vw;
+	width: 6vw;
+}
+
+.contact .telInfo>.contact-f-info{
+	font-size: 3vw;
+	position: relative;
+	left: 6.5vw;
+}
+
+.contact .telInfo>.contact-main>.contact-f-info> span{
+	font-size: 4vw;
+	margin-left: 3vw;
+}
+
+.contact .telInfo>.contact-main>.contact-f-info>img{
+	margin-left: 5vw;
+	margin-bottom: 0.5vw;
+	width: 6vw;
+}
+
+#parent-info{
+	position: relative;
+	margin-top: 6vw;
+}
+
+#parent-info::after{
+	display: block;
+	clear: both;
+	content:"";
+}
+
+#m-parent::after{
+	display: block;
+	clear: both;
+	content:"";	
+}
+
+#f-parent::after{
+	display: block;
+	clear: both;
+	content:"";	
+}
+
+.parent-info1{
+    float: left;
+    margin-left: 11%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 3.5vw;
+}
+
+.parent-info1.two_size {
+	margin-top: 16%;
+}
+
+.parent-info2{
+    float: left;
+    margin-top: 9%;
+    margin-left: 5%;
+    margin-bottom: -3%;
+    font-size: 3vw;
+    width: 54%;
+    text-align: left;
+}
+
+.parent-info2>div>.p-info {
+	font-size: 4vw;
+}
+
+.m-parent{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.contact .telInfo>#parent-info img{
+	margin-left: 9%;
+	margin-bottom: 1.2vw;
+	width: 11%;
+}
+
+.parent-info2>div+div{
+	margin-top: 9%;
+}
+
+.invitation .notice{
+	clear: both;
+	margin-top: 7vw;
+
+}
+
+.invitation .notice>p{
+	font-size: 2.6vw;	
+	margin-top: 7vw;
+	padding: 0 15% 0 15%;
+	line-height: 190%;
+	word-break: keep-all;
+}
+
+
+
+.invitation .galleries{
+	background-color: #f4f4f2;
+	padding-top: 12vw;
+	padding-bottom: 8vw;
+
+}
+
+.invitation .galleries>h1{
+	margin-bottom: 8vw;
+}
+
+.invitation .galleries>.galleries-align{
+	text-align: left;
+	margin: 9vw 7.3vw -4vw 8vw;
+	display: inline-block;
+	letter-spacing: 0;
+}
+
+.invitation .galleries>.galleries-align>.galleries-content{
+	width: 26.8vw;
+	height: 26.8vw;
+	border-radius: 5%;
+   	-webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -o-border-radius: 5%;
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	box-shadow: inset 2px 3px 13px -3px #a09d9d;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 0.3vw;
+	margin-top: 0.5vw;
+	margin-right: 0.3vw;
+	color: white;
+/* 	filter: brightness(0.30); */
+	font-size: 5.2vw;
+	
+}
+
+.invitation .galleries>.galleries-align>.galleries-content>div {
+    color: #fff;
+    background: rgb(0 0 0 / 51%);
+    width: 100%;
+    height: 100%;
+    line-height: 27vw;
+    border-radius: 5%;
+    position: absolute;
+    top: 0;
+    left: 0;    
+    text-align: center;
+   	font-size: 3vw;
+}
+
+
+.invitation .galleries>.mediaUrl{
+	margin: 0 auto;
+	display: inline-block;
+	padding-top: 4vw;
+}
+
+.invitation .galleries>.mediaUrl iframe{
+	width: 83vw;
+	height: 43vw;
+
+}
+
+.my-gallery {
+	width: 100%;
+	float: left;
+}
+.my-gallery img {
+	width: 100%;
+	height: auto;
+}
+.my-gallery figure {
+	display: block;
+	float: left;
+	margin: 0 5px 5px 0;
+	width: 150px;
+}
+.my-gallery figcaption {
+	display: none;
+}
+
+.invitation .location{
+	margin-top: 11vw;
+}
+
+.invitation .location>#location-title>.address-info{
+	margin: 0 10vw;
+}
+
+
+
+.invitation .location>#location-title{
+	margin-bottom: 30px;
+	font-family: 'NanumSquare';
+}
+
+
+.invitation .location>#location-title>.address-info>#address-hall-name{
+	font-family: NanumSquare;
+	font-weight: bold;
+	font-size: 3.5vw;
+	margin-top: 10%;
+}
+
+.invitation .location>#location-title>.address-info>#address-hall-address{
+	font-size: 3.2vw;
+}
+
+.invitation .location>#location-title>.address-info>span{
+	font-size: 3vw;
+}
+
+
+
+.invitation .location>#location-title>.address-info>.min-00>span[id="minute"] {
+	display: none;
+}
+
+
+.invitation .location>.map-frame{
+	overflow: hidden;
+}
+
+#map-frame-img{
+	position: absolute;
+    display: block;
+    width: 84vw;
+    z-index: 2;
+    margin: 0 8vw;
+}
+
+
+
+#map-clip{
+	position: relative;
+    display: inline-block;
+    z-index: 100;
+    width: 3.7%;
+    margin: 2vw 68vw -8vw 0vw;
+}
+
+
+
+#map{
+	width: 82vw; 
+	height: 53.7vw; 
+	position: relative; 
+	overflow: hidden; 
+	background: url(&quot;http://static.naver.net/maps/mantle/1x/auth_fail.png&quot;) center center / 256px 256px repeat transparent;
+	margin: 1vw 9vw;
+	-webkit-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+}
+
+#map .active{
+	width: 82vw; 
+	height: 53.7vw; 
+	position: relative; 
+	overflow: hidden; 
+	background: url(&quot;http://static.naver.net/maps/mantle/1x/auth_fail.png&quot;) center center / 256px 256px repeat transparent;
+	margin: 1vw 9vw;
+	-webkit-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+}
+
+
+.invitation .location>#location-sub{
+	position: relative;
+    text-align: left;
+    max-width: 100%;
+    padding-left: 13.6%;
+    padding-right: 13.6%;
+	margin-top: 9vw;
+	font-size: 3.3vw;
+	font-family: 'NanumSquare';
+	word-break: keep-all;
+	
+}
+
+.invitation .location>#location-sub>.location-img{
+	width: 4.5%;
+	margin-bottom: 1.5vw;
+}
+
+
+.invitation .location>#location-sub>#location-sub-title{
+	font-size: 3.7vw;
+}
+
+.invitation .location>#location-sub>p{
+	margin-top: 1vw;
+	font-size: 3.3vw;
+}
+
+
+.invitation .celebration{
+	padding-top: 16vw;
+	background-image: url(/img/invitationMobile/9413/cover-bgImg.png);
+	margin-bottom: 0;
+}
+
+.invitation .celebration>.celebration-coment{
+	font-size: 3vw;
+    margin-top: 5vw;
+}
+
+.invitation .celebration>.message-input>#message-form{
+	max-width: 93%;
+	margin: 0 auto;
+	margin-top: 8vw;
+}
+
+
+.invitation .celebration .message-input #message-input-form{
+	text-align: left;
+	padding: 0% 2% 0% 2%;
+	display: inline-block;
+}
+
+
+.invitation .celebration .message-input span{
+	font-size: 3.4vw;
+}
+
+
+input[name = name]{
+	width: 39vw;
+	height: 43px;
+	padding: 5px 6px;
+	margin: 0px 0;
+	display: inline-block;
+	border: 2px solid;
+	box-sizing: border-box; 
+}
+
+input[name = password]{
+	width: 39vw;
+	height: 43px;
+	padding: 5px 6px;
+	margin: 0px 0;
+	display: inline-block;
+	border: 2px solid;
+	box-sizing: border-box; 
+	font-family: 'sans-serif';
+
+}
+
+textarea[name = content]{
+	margin: 3vw 0 3vw 0;
+	width: 82.6vw;
+	height: 22vw;
+	padding: 5px 6px;
+	display: inline-block;
+	border: 2px solid;
+	box-sizing: border-box; 
+	resize: none;
+	
+}
+
+input:-webkit-autofill {
+   -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+
+.invitation .celebration .message-input hr{
+	width: 540px;
+	margin-top: -10px;
+    margin-bottom: 20px;
+    border-top: 2px solid #dadada;
+    max-width: 90%
+}
+
+.invitation .celebration>.message-input{
+	position: relative;
+	font-size: 3vw;
+	color: #bdbdbd;
+	margin-top: 0;
+	padding: 0;
+
+}
+
+button[type = submit]{
+	width: 89%;
+	height: 10vw;
+	font-size: 3.4vw;
+	background-color: #4d4d4d;
+	border: none;
+	border-radius: 12px;
+	color: #ffffff;
+	max-width: 100%;
+	font-family: 'NanumSquare';
+}
+
+.invitation .celebration>.message-output{
+	font-size:13px;
+	margin-top: 3vw;
+}
+
+.invitation .celebration.message-output .message-details{
+	width: 84%;
+	height: auto;
+	margin: auto;
+	font-size: 3.4vw;
+	max-width: 78%;
+    min-height: 58px;
+    padding-bottom: 3.2vw;
+}
+
+.invitation .celebration.message-output .message-details>.message-info{
+	margin: 10px;
+}
+
+.invitation .celebration.message-output .message-details>.message-info::after{
+	display: block;
+	content: '';
+	clear: both;
+}
+
+.invitation .celebration.message-output .message-details>.message-info>.message-name{
+	float: left;
+}
+
+.invitation .celebration.message-output .message-details>.message-info>.message-date{
+	float: right;
+}
+
+.invitation .celebration.message-output .message-details>.message-message{
+	text-align: start;
+	padding: 10px;
+}
+
+.invitation .celebration.message-output .message-details>.delete-message{
+	position: relative;
+    display: inline-block;
+    margin-left: 95%;
+    font-size: 4vw;
+}
+
+.invitation .celebration.message-output .message-details>#message-line{
+	width: 100%;
+	padding-bottom: 3vw;
+}
+
+
+input[name="messagePassword"]{
+	clear: both;
+	width: 50%;
+    height: 43px;
+    padding: 5px 6px;
+    margin: 0px 0;
+    display: inline-block;
+
+}
+
+
+button[name="deleteSubmit"]{
+	width: 20%;
+	height: 8vw;
+	font-size: 3.4vw;
+	color: #a7a7a7;
+	background-color: #f1f1f1;
+	border: none;
+	border-radius: 8px;
+	font-family: 'NanumSquare';
+}
+
+.invitation .celebration>.message-output button[type="button"]{
+	width: 25%;
+	height: 10vw;
+	font-size: 3.4vw;
+	background-color: #4d4d4d;
+	border: none;
+	border-radius: 12px;
+	font-family: 'NanumSquare';
+	color: #ffff;
+}
+
+
+.invitation .accountInfomation{
+	margin-bottom: 0;
+	background-image: url(/img/invitationMobile/9413/cover-bgImg.png);
+}
+
+
+.invitation .accountInfo>.account-details{
+	font-size: 3vw;
+	margin-top: 2%;
+	text-align: left;
+	padding: 0 2vw;
+}
+
+.invitation .accountInfomation>.accountInfo{
+	position: relative;
+	margin: 0 8%;
+	padding-top: 10vw;
+}
+
+
+
+
+.invitation .accountInfomation>.accountInfo>img{
+	width: 100%;
+	margin-bottom: 1%;
+
+}
+
+
+
+.invitation .accountInfomation>.accountInfo>span{
+	font-size: 3.1vw;
+	display: block;
+	margin: -1% 0% 1% 0%;
+	font-family: 'NanumSquare';
+}
+
+
+.invitation .accountInfomation>.accountInfo>.account-details>p{
+	font-size: 2.5vw;
+	font-family: 'NanumSquare';
+	display: inline-block;
+    margin: 1vw;
+    padding: 2vw 0vw;
+    background-color: #c5b8b2;
+    width: 37vw;
+    max-width: 38vw;
+    text-align: center;
+    vertical-align: top;
+    
+}
+
+
+
+
+.invitation-mobile .invitation hr[id="sns-line"]{
+	width: 84%;
+	margin-top: -10px;
+    margin-bottom: 20px;
+    border-top: 2px solid #dadada;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.invitation .sns{
+	padding: 6% 5% 7% 5%;
+	background-image: url(/img/invitationMobile/9413/cover-bgImg.png);
+	
+}
+
+.invitation .snsInfo{
+	font-size: 4.5vw;
+}
+
+
+.invitation .snsInfo> a{
+	margin-left: 2%;
+	margin-right: 3%;
+	display: inline-block;
+	font-size: 5.5vw;
+	color: #5a5d5a;
+}
+
+.invitation .snsInfo>a>img{
+	width: 10vw;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 640px;
+    margin: 0 auto;
+    max-height: 400px;
+}
+
+.owl-carousel .owl-item .item {
+	background: #333;
+}
+
+.owl-theme .owl-nav,
+.owl-theme .owl-dots,
+.owl-theme .owl-nav {
+	display: none;
+}
+
+.owl-galleries {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    display: none;	
+}
+
+body.galleries-open .owl-galleries{
+	display: block;
+}
+
+.owl-galleries .galleries-bg {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 10000;
+    cursor: pointer;
+    max-width: 640px;	
+}
+
+.owl-galleries .show {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 400px;
+    z-index: 10001;
+    transform: translate(-50%,-50%);	
+}
+
+.owl-galleries .show .exit-btn {
+	color: #fff;
+    z-index: 10000;
+    font-size: 30px;
+    position: absolute;
+    top: -42px;
+    right: 10px;	
+}
+
+.owl-galleries .show .show-count {
+    position: absolute;
+    top: -35px;
+    left: 10px;
+    color: #fff;
+    font-size: 18px;
+    margin: 0;	
+}
+
+@media screen and (min-width: 641px) {
+
+	html {
+	height: 100%;
+	}
+
+	html, body {
+		font-family: 'NanumMyeongjo';
+		font-weight: 400;
+		letter-spacing: 1px;
+		-webkit-font-smoothing: antialiased;
+		font-smoothing: antialiased;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+		text-stroke: 0.6px;
+		font-size: 14px;
+		height: 100%;
+		word-bradk: keep-all; /* 윤주추가 */
+	}
+	
+	.wrapper {
+		max-width: 640px;
+		margin: 0px auto;
+	}
+	
+	.invitation-mobile .invitation{
+		font-family: 'NanumSquare';
+		text-align: center;
+	}
+
+
+	#cover-img{
+		width: 100%;
+	    height: auto;
+	    position: relative;
+	}
+	
+	#cover-title{
+	    width: 36%;
+	    height: auto;
+	    position: relative;
+	    margin: 114px 0 28px 0;
+	}
+	
+	
+	#cover-galleries_cover{
+	    right: 0;
+	    width: 100%;
+	    height: auto; 
+	    position: relative;
+	
+	}
+	
+	#marry-text{
+		width: 36%;
+		margin: 44.8px 0 89.6px 0;
+	}
+	
+	section{
+		margin-bottom: 70.4px;
+	}
+	
+	img[name="icon"]{
+		width: 30%;
+	
+	}
+	.cover_page{
+		margin-bottom: 0vw;
+		font-family: 'NanumSquare';
+	}
+	
+	
+	.invitation .cover_page>.coverpage-wrapper{
+		text-align: center;
+		position: relative;
+	}
+	
+	.invitation-mobile .cover_page .coverpage-wrapper .bg-img{
+		position: relative;
+		background-image: url(/img/invitationMobile/9413/cover-bgImg.png);
+		background-size: 100%;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.invitation-mobile .cover_page .coverpage-wrapper .bg-img>.cover-background{
+		position: relative;
+		text-align: center;
+		margin: 0 auto;
+		
+	}
+	
+	.invitation-mobile .cover_page .coverpage-wrapper .bg-img>.cover-title{
+		position: relative;
+	}
+	
+	.cover .cover_name{
+	    font-size: 19.2px;
+	    color: #404140;
+	    margin-bottom: 30.72px;
+	    display: inline-block;
+	}
+	
+	.cover .cover_name>p{
+		margin: 6.4px;
+		font-size: 28.8px;
+		font-weight: 600;
+	}
+	
+	.cover .marryAtAndHall{
+	    position: relative;
+	    font-size: 23.68px;
+	    width: 100%;
+	    text-align: center;
+	    padding: 0 108.8px;
+	}
+	
+	.cover .marryAtAndHall>img {
+		width: 5%;
+	}
+	
+	.cover .marryAtAndHall>p{
+	    text-align: left;
+	    font-size: 3.2vw;
+	    margin: 0;
+	    margin-top: 3vw;
+	    word-break: keep-all;
+	}
+	
+	.cover .coverpage-wrapper p[id="marryDay"]{
+	    position: relative;
+	    right: 0vw;
+	    font-size: 23.68px;
+	    letter-spacing: 1px;
+	    margin: 44.8px 0 12.8px 0;
+	    color: #a52221;
+	    font-weight: 600;
+	}
+	
+	
+	.cover .marryAtAndHall>p.min-00{
+		display: inline-block;
+	}
+	
+	
+	.cover .marryAtAndHall>p.min-00>span[id="minute"] {
+		display: none;
+	}
+	
+	.cover>.coverpage-wrapper>.bg-img>#cover-icon{
+	    width: 3%;
+	    position: absolute;
+	    bottom: 34vw;
+	    left: 19vw;
+	}
+	
+	.invitation .main{
+		position: relative;
+		margin-top: 11%;
+		margin-bottom: 0%;
+	}
+	
+	.invitation .main .content{
+		margin-top: 19%;
+		margin-bottom: 20%;
+		font-size: 21.76px;
+	    padding: 0% 15% 0% 15%;
+		line-height: 190%;
+		word-break: keep-all;
+	}
+	
+	.invitation .main>.mainImg{
+		margin-top: 100px;
+	}
+	
+	.invitation .main>.mainImg>#galleries-main{
+		width: 100%;
+	}
+	
+
+	#tbCalendarYM{
+		font-size: 6.6vw;
+	}
+
+	.invitation .contact{
+		position: relative;
+		margin: 0;
+		padding-top: 80px;
+		padding-bottom: 70.4px;
+		background-color: #eceae7;
+	}
+	
+	.contact .telInfo{
+		margin: 0%;
+		padding-bottom: 0;
+	}
+	
+	.invitation .contact .telInfo .contact-main{
+		text-align: left;
+	}
+	
+	.contact .telInfo span{
+		margin-left: 25.6px;
+	}
+	
+	.contact .telInfo>.contact-m-info{
+		font-size: 19.2px;
+		position: relative;
+		margin-left: 71.68px;
+	}
+	
+	.contact .telInfo>.contact-main>.contact-m-info> span{
+		font-size: 25.6px;
+		margin-left: 19.2px;
+	}
+	
+	.contact .telInfo>.contact-main>.contact-m-info>img{
+		margin-left: 32px;
+		margin-bottom: 3.2px;
+		width: 38.4px;
+	}
+	
+	.contact .telInfo>.contact-f-info{
+		font-size: 19.2px;
+		position: relative;
+		left: 41.6px;
+	}
+	
+	.contact .telInfo>.contact-main>.contact-f-info> span{
+		font-size: 25.6px;
+		margin-left: 19.2px;
+	}
+	
+	.contact .telInfo>.contact-main>.contact-f-info>img{
+		margin-left: 32px;
+		margin-bottom: 3.2px;
+		width: 38.4px;
+	}
+	
+	#parent-info{
+		position: relative;
+		margin-top: 38.4px;
+	}
+	
+	#parent-info::after{
+		display: block;
+		clear: both;
+		content:"";
+	}
+	
+	#m-parent::after{
+		display: block;
+		clear: both;
+		content:"";	
+	}
+	
+	#f-parent::after{
+		display: block;
+		clear: both;
+		content:"";	
+	}
+	
+	.parent-info1{
+	    float: left;
+	    margin-left: 11%;
+	    margin-top: 10%;
+	    margin-bottom: 10%;
+	    font-size: 22.4px;
+	}
+	
+	.parent-info1.two_size {
+		margin-top: 16%;
+	}
+	
+	.parent-info2{
+	    float: left;
+	    margin-top: 9%;
+	    margin-left: 5%;
+	    margin-bottom: -3%;
+	    font-size: 19.2px;
+	    width: 54%;
+	    text-align: left;
+	}
+	
+	.parent-info2>div>.p-info {
+		font-size: 25.6px;
+	}
+	
+	.m-parent{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	
+	.contact .telInfo>#parent-info img{
+		margin-left: 9%;
+		margin-bottom: 8px;
+		width: 11%;
+	}
+	
+	.parent-info2>div+div{
+		margin-top: 9%;
+	}
+
+	
+	.invitation .galleries{
+		background-color: #f4f4f2;
+		padding-top: 76.8px;
+		padding-bottom: 51.2px;
+	
+	}
+	
+	.invitation .galleries>h1{
+		margin-bottom: 51.2px;
+	}
+	
+	.invitation .galleries>.galleries-align{
+		text-align: left;
+		margin: 57.6px 44.8px -25.6px 51.2px;
+		display: inline-block;
+		letter-spacing: 0;
+	}
+	
+	.invitation .galleries>.galleries-align>.galleries-content{
+		width: 171.52px;
+		height: 171.52px;
+		border-radius: 5%;
+	   	-webkit-border-radius: 5%;
+	    -moz-border-radius: 5%;
+	    -o-border-radius: 5%;
+		overflow: hidden;
+		position: relative;
+		display: inline-block;
+		box-shadow: inset 2px 3px 13px -3px #a09d9d;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-left: 1.92px;
+		margin-top: 3.2px;
+		margin-right: 1.92px;
+		color: white;
+	/* 	filter: brightness(0.30); */
+		font-size: 33.28px;
+		
+	}
+	
+	.invitation .galleries>.galleries-align>.galleries-content>div {
+	    color: #fff;
+	    background: rgb(0 0 0 / 51%);
+	    width: 100%;
+	    height: 100%;
+	    line-height: 172.8px;
+	    border-radius: 5%;
+	    position: absolute;
+	    top: 0;
+	    left: 0;    
+	    text-align: center;
+	   	font-size: 19.2px;
+	}
+	
+	
+	.invitation .galleries>.mediaUrl{
+		margin-top: 44.8px;
+		text-align: center;
+	}
+	
+	.invitation .galleries>.mediaUrl iframe{
+		width: 531.2px;
+		height: 275.2px;
+	}
+	
+	.my-gallery {
+		width: 100%;
+		float: left;
+	}
+	.my-gallery img {
+		width: 100%;
+		height: auto;
+	}
+	.my-gallery figure {
+		display: block;
+		float: left;
+		margin: 0 5px 5px 0;
+		width: 150px;
+	}
+	.my-gallery figcaption {
+		display: none;
+	}
+	
+	.invitation .location{
+		margin-top: 70.4px;
+	}
+	
+	.invitation .location>#location-title{
+		margin-bottom: 30px;
+		font-family: 'NanumSquare';
+	}
+	
+	
+	.invitation .location>#location-title>.address-info>#address-hall-name{
+		font-family: NanumSquare;
+		font-weight: bold;
+		font-size: 22.4px;
+		margin-top: 10%;
+	}
+	
+	.invitation .location>#location-title>.address-info>#address-hall-address{
+		font-size: 20.48px;
+	}
+	
+	.invitation .location>#location-title>.address-info>span{
+		font-size: 19.2px;
+	}
+	
+	
+	
+	.invitation .location>#location-title>.address-info>.min-00>span[id="minute"] {
+		display: none;
+	}
+	
+	
+	.invitation .location>.map-frame{
+		overflow: hidden;
+	}
+	
+	#map-frame-img{
+		position: absolute;
+	    display: block;
+	    width: 537.6px;
+	    z-index: 2;
+	    margin: 0 51.2px;
+	}
+	
+	
+	
+	#map-clip{
+		position: relative;
+	    display: inline-block;
+	    z-index: 100;
+	    width: 3.7%;
+	    margin: 12.8px 435.2px -51.2px 0vw;
+	}
+	
+	
+	
+	#map{
+		width: 524.8px; 
+		height: 343.68px; 
+		position: relative; 
+		overflow: hidden; 
+		background: url(&quot;http://static.naver.net/maps/mantle/1x/auth_fail.png&quot;) center center / 256px 256px repeat transparent;
+		margin: 6.4px 57.6px;
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+	}
+	
+	#map .active{
+		width: 524.8px; 
+		height: 343.68px; 
+		position: relative; 
+		overflow: hidden; 
+		background: url(&quot;http://static.naver.net/maps/mantle/1x/auth_fail.png&quot;) center center / 256px 256px repeat transparent;
+		margin: 6.4px 57.6px;
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+	}
+	
+	.invitation .location>#location-title>.address-info{
+		margin: 0 64px;
+	}
+	
+	
+	
+	.invitation .location>#location-sub{
+		position: relative;
+	    text-align: left;
+	    max-width: 100%;
+	    padding-left: 13.6%;
+	    padding-right: 13.6%;
+		margin-top: 57.6px;
+		font-size: 21.12px;
+		font-family: 'NanumSquare';
+		word-break: keep-all;
+		
+	}
+	
+	.invitation .location>#location-sub>.location-img{
+		width: 4.5%;
+		margin-bottom: 9.6px;
+	}
+	
+	
+	.invitation .location>#location-sub>#location-sub-title{
+		font-size: 23.68px;
+	}
+	
+	.invitation .location>#location-sub>p{
+		margin-top: 6.4px;
+		font-size: 21.12px;
+	}
+	
+	
+	.invitation .celebration{
+		padding-top: 102.4px;
+		background-image: url(/img/invitationMobile/9413/cover-bgImg.png);
+		margin-bottom: 0;
+	}
+	
+	.invitation .celebration>.celebration-coment{
+		font-size: 19.2px;
+	    margin-top: 32px;
+	}
+	
+	.invitation .celebration>.message-input>#message-form{
+		max-width: 93%;
+		margin: 0 auto;
+		margin-top: 51.2px;
+	}
+	
+	
+	.invitation .celebration .message-input #message-input-form{
+		text-align: left;
+		padding: 0% 2% 0% 2%;
+		display: inline-block;
+	}
+	
+	
+	.invitation .celebration .message-input span{
+		font-size: 21.76px;
+	}
+	
+	
+	input[name = name]{
+		width: 249.6px;
+		height: 43px;
+		padding: 5px 6px;
+		margin: 0px 0;
+		display: inline-block;
+		border: 2px solid;
+		box-sizing: border-box; 
+	}
+	
+	input[name = password]{
+		width: 249.6px;
+		height: 43px;
+		padding: 5px 6px;
+		margin: 0px 0;
+		display: inline-block;
+		border: 2px solid;
+		box-sizing: border-box; 
+		font-family: 'NanumMyeongjo';
+	
+	}
+	
+	textarea[name = content]{
+		margin: 19.2px 0 19.2px 0;
+		width: 528.64px;
+		height: 140.8px;
+		padding: 5px 6px;
+		display: inline-block;
+		border: 2px solid;
+		box-sizing: border-box; 
+		
+	}
+	
+	
+	.invitation .celebration.message-output .message-details>#message-line{
+		width: 100%;
+		padding-bottom: 19.2px;
+	}
+	
+	
+	input:-webkit-autofill {
+	   -webkit-box-shadow: 0 0 0 1000px white inset;
+	}
+	
+	
+	.invitation .celebration .message-input hr{
+		width: 540px;
+		margin-top: -10px;
+	    margin-bottom: 20px;
+	    border-top: 2px solid #dadada;
+	    max-width: 90%
+	}
+	
+	.invitation .celebration>.message-input{
+		position: relative;
+		font-size: 19.2px;
+		color: #bdbdbd;
+		margin-top: 0;
+		padding: 0;
+	
+	}
+	
+	button[type = submit]{
+		width: 89%;
+		height: 64px;
+		font-size: 21.76px;
+		background-color: #4d4d4d;
+		border: none;
+		border-radius: 12px;
+		color: #ffffff;
+		max-width: 100%;
+		font-family: 'NanumSquare';
+	}
+	
+	.invitation .celebration>.message-output{
+		font-size:13px;
+		margin-top: 19.5px;
+	}
+	
+	.invitation .celebration.message-output .message-details{
+		width: 540px;
+		height: auto;
+		margin: auto;
+		font-size: 21px;
+		max-width: 78%;
+	    min-height: 58px;
+	    padding-bottom: 20px;
+	}
+	
+	.invitation .celebration.message-output .message-details>.message-info{
+		margin: 10px;
+	}
+	
+	.invitation .celebration.message-output .message-details>.message-info::after{
+		display: block;
+		content: '';
+		clear: both;
+	}
+	
+	.invitation .celebration.message-output .message-details>.message-info>.message-name{
+		float: left;
+	}
+	
+	.invitation .celebration.message-output .message-details>.message-info>.message-date{
+		float: right;
+	}
+	
+	.invitation .celebration.message-output .message-details>.message-message{
+		text-align: start;
+		padding: 10px;
+	}
+	
+	.invitation .celebration.message-output .message-details>.delete-message{
+		position: relative;
+	    display: inline-block;
+	    margin-left: 95%;
+	    font-size: 26px;
+	}
+	
+	input[name="messagePassword"]{
+		clear: both;
+		width: 50%;
+	    height: 43px;
+	    padding: 5px 6px;
+	    margin: 0px 0;
+	    display: inline-block;
+	
+	}
+	
+	
+	button[name="deleteSubmit"]{
+		width: 20%;
+		height: 51.2px;
+		font-size: 21.76px;
+		color: #a7a7a7;
+		background-color: #f1f1f1;
+		border: none;
+		border-radius: 8px;
+		font-family: 'NanumSquare';
+	}
+	
+	.invitation .celebration>.message-output button[type="button"]{
+		width: 25%;
+		height: 65px;
+		font-size: 21.76px;
+		background-color: #4d4d4d;
+		border: none;
+		border-radius: 12px;
+		font-family: 'NanumSquare';
+		color: #ffff;
+	}
+	
+	
+	.invitation .accountInfomation{
+		margin-bottom: 0;
+		background-image: url(/img/invitationMobile/9413/cover-bgImg.png);
+	}
+	
+	
+	.invitation .accountInfo>.account-details{
+		font-size: 19.2px;
+		margin-top: 2%;
+		text-align: left;
+		padding: 0 12.8px;
+	}
+	
+	.invitation .accountInfomation>.accountInfo{
+		position: relative;
+		margin: 0 8%;
+		padding-top: 64px;
+	}
+	
+	
+	
+	
+	.invitation .accountInfomation>.accountInfo>img{
+		width: 100%;
+		margin-bottom: 1%;
+	
+	}
+	
+	
+	
+	.invitation .accountInfomation>.accountInfo>span{
+		font-size: 19.84px;
+		display: block;
+		margin: -1% 0% 1% 0%;
+		font-family: 'NanumSquare';
+	}
+	
+	
+	.invitation .accountInfomation>.accountInfo>.account-details>p{
+		font-size: 16px;
+		font-family: 'NanumSquare';
+		display: inline-block;
+	    margin: 6.4px;
+	    padding: 12.8px 0;
+	    background-color: #c5b8b2;
+	    width: 236.8px;
+	    max-width: 243.2px;
+	    text-align: center;
+	    vertical-align: top;
+	    
+	}
+	
+	
+	
+	
+	.invitation-mobile .invitation hr[id="sns-line"]{
+		width: 84%;
+		margin-top: -10px;
+	    margin-bottom: 20px;
+	    border-top: 2px solid #dadada;
+	    max-width: 100%;
+	    height: auto;
+	}
+	
+	
+	.invitation .sns{
+		padding: 6% 5% 7% 5%;
+		background-image: url(/img/invitationMobile/9413/cover-bgImg.png);
+		
+	}
+	
+	.invitation .snsInfo{
+		font-size: 28.8px;
+	}
+	
+	
+	.invitation .snsInfo> a{
+		margin-left: 2%;
+		margin-right: 3%;
+		display: inline-block;
+		font-size: 35.2px;
+		color: #5a5d5a;
+	}
+	
+	.invitation .snsInfo>a>img{
+		width: 64px;
+	}
+	
+	.owl-carousel .owl-item img {
+	    display: block;
+	    width: 100%;
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    max-width: 640px;
+	    margin: 0 auto;
+	    max-height: 400px;
+	}
+	
+	.owl-carousel .owl-item .item {
+		background: #333;
+	}
+	
+	.owl-theme .owl-nav,
+	.owl-theme .owl-dots,
+	.owl-theme .owl-nav {
+		display: none;
+	}
+	
+	.owl-galleries {
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    z-index: 10000;
+	    width: 100%;
+	    height: 100%;
+	    max-width: 640px;
+	    margin: 0 auto;
+	    display: none;	
+	}
+	
+	body.galleries-open .owl-galleries{
+		display: block;
+	}
+	
+	.owl-galleries .galleries-bg {
+	    display: block;
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background-color: #000;
+	    z-index: 10000;
+	    cursor: pointer;
+	    max-width: 640px;	
+	}
+	
+	.owl-galleries .show {
+	    position: relative;
+	    top: 50%;
+	    left: 50%;
+	    width: 100%;
+	    height: 400px;
+	    z-index: 10001;
+	    transform: translate(-50%,-50%);	
+	}
+	
+	.owl-galleries .show .exit-btn {
+		color: #fff;
+	    z-index: 10000;
+	    font-size: 30px;
+	    position: absolute;
+	    top: -42px;
+	    right: 10px;	
+	}
+	
+	.owl-galleries .show .show-count {
+	    position: absolute;
+	    top: -35px;
+	    left: 10px;
+	    color: #fff;
+	    font-size: 18px;
+	    margin: 0;	
+	}
+	
+	.owl-galleries,
+	.owl-galleries .galleries-bg {
+	    left: auto;
+	}
+	
+}
+.pre-tag{
+	white-space: pre-wrap;
+}
+

@@ -1,0 +1,40 @@
+{
+	"bundles" : [{
+		"type" : "css",
+		"name" : "../assets/style.css",
+		"files" : [
+			"../css/bootstrap.min.css",
+			"../css/jquery-ui-1.10.4.custom.min.css",
+			"../css/default.css",
+			"../js/photoswipe/photoswipe.css",
+			"../js/photoswipe/default-skin/default-skin.css",
+			"../js/owlcarousel/assets/owl.carousel.min.css",
+			"../js/slick/slick.css",
+			"../js/slick/slick-theme.css",
+			"../js/owlcarousel/assets/owl.theme.default.min.css"
+		]
+	}, {
+		"type": "js",
+		"name" : "../assets/script.js",
+		"files": [
+			"../js/jquery-1.12.4.min.js",
+			"../js/jquery-ui.min.js",
+			"../js/bootstrap.min.js",
+			"../js/momentjs/moment.min.js",
+			"../js/jquery.backstretch.min.js",
+			"../js/jquery.ba-hashchange.min.js",
+			"../js/photoswipe/photoswipe.min.js",
+			"../js/photoswipe/photoswipe-ui-default.min.js",
+			"../js/parsley.min.js",
+			"../js/parsley.ko.js",
+			"../js/owlcarousel/owl.carousel.min.js",
+			"../js/mustache.min.js",
+			"../js/fa-light.js",
+			"../js/fa-regular.js",
+			"../js/fontawesome.js",
+			"../js/kakao.min.js",
+			"../js/slick/slick.min.js",
+			"../js/default.js"
+		]
+	}]
+}

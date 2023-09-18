@@ -1,0 +1,210 @@
+{% extends "shared/layout.default" %}
+{% block screen_content %}
+{% autoescape false %}
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=5d8vznkt4h"></script>
+
+<link href="/themes/default/style2.css" rel="stylesheet">
+
+<div class="wrapper">
+<div id="my_page" class="invitation-mobile">
+	<div class="invitation-mobile invitation">
+	
+		<section class="cover cover_page">
+			<div class="coverpage-wrapper">
+				<div class="bg-img">
+					<img class="cover-background" src="/img/invitationMobile/concept2/cover-background.png" alt>
+					<img class="cover-title" src="/img/invitationMobile/concept2/main_img.png" alt>
+				</div>
+				<div class="cover cover_name">
+					<p>김철수</p>
+					<p>and</p>
+					<p>최영희</p>
+				</div>
+				<br>
+				<div class="cover marryAtAndHall">
+					<p>2021년 09월 11일 토요일 낮 12시</p>
+					<p>서울 신라호텔 영빈관</p>
+				</div>
+			</div>
+		</section>
+		
+		<section class="invitation main">
+			<img name="icon" src="/img/invitationMobile/concept2/icon.png">
+			<h1>초대합니다</h1>
+			<div class="invitation content">
+				<span>같은 생각, 같은 느낌으로 <br>지혜롭게 살겠습니다. <br>저희 두 사람 하나가 되는<br>약속의 시간에 여러분을 모시고자 합니다.</span>
+			</div>
+			<div class="content personInfo">
+				<p>
+					<span>김상인</span> ㆍ <span>정수연</span> 장남  <span>김철수</span>
+				</p>
+				<p>
+					<span>최인수</span> ㆍ  <span>김영희</span> 차녀   <span>최영희</span>
+				</p>
+			</div>
+			<div class="mainImg">
+				<img src="/img/invitationMobile/concept2/mainImg.png">
+			</div>
+		</section>
+		
+		<section class="invitation calender">
+			<div class= calender-info>
+				<img name="icon" src="/img/invitationMobile/concept2/icon.png">
+				<!-- <img name="carendarImg" src="/img/invitationMobile/concept2/carendar-background.jpg"> -->
+				<div class="calender month">9월</div>
+				<div class="calender calender-api">캘린더API 들어갈 자리</div>
+			</div>
+		</section>
+		
+		<section class="invitation contact">
+			<img name="icon" src="/img/invitationMobile/concept2/icon.png">
+			<div class="contact telInfo">
+				<h1 id="headline">연락처</h1>
+				<p id="contactInfo">
+					<span>김상인</span>&nbsp; ㆍ <span>정수연</span>&nbsp;&nbsp; 장남 &nbsp;&nbsp; <span id="male-name">김철수</span>
+					<img class="message-call" src="/img/invitationMobile/concept2/call.png" onclick="">
+				</p>
+				<p>
+					<span>최인수</span>&nbsp; ㆍ <span>김영희</span>&nbsp;&nbsp; 차녀 &nbsp;&nbsp; <span id="femals-name">최영희</span>
+					<img class="message-call" src="/img/invitationMobile/concept2/call.png" onclick="">
+				</p>
+				<br>
+				<div id= m-parent>
+					<div class="parent-info1">신랑측 혼주ㆍ </div> 
+					<div class="parent-info2">
+						아버지<span>김상인</span><img class="message-call" src="/img/invitationMobile/concept2/message.png" onclick=""><img class="message-call" src="/img/invitationMobile/concept2/call.png" onclick=""><br><br>
+						어머니<span>정수연</span><img class="message-call" src="/img/invitationMobile/concept2/message.png" onclick=""><img class="message-call" src="/img/invitationMobile/concept2/call.png" onclick="">
+					</div>
+				</div>	
+				<br>
+				<div id="f-parent">
+					<div class="parent-info1">신부측 혼주ㆍ</div>
+					<div class="parent-info2">
+						아버지<span>최인수</span><img class="message-call" src="/img/invitationMobile/concept2/message.png" onclick=""><img class="message-call" src="/img/invitationMobile/concept2/call.png" onclick=""><br><br>
+						어머니<span>김영희</span><img class="message-call" src="/img/invitationMobile/concept2/message.png" onclick=""><img class="message-call" src="/img/invitationMobile/concept2/call.png" onclick="">
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="invitation notice">
+			<img name="icon" src="/img/invitationMobile/concept2/icon.png">
+			<div class="notice">
+				<h1>드리고 싶은 말씀</h1>
+				<span id="notice-content">주차장이 협소하오니 대중교통 이용을 부탁드립니다.<br>식장의 사정으로 화환은 받지 않습니다.</span>
+			</div>
+		</section>
+		
+		<section class="invitation galleries">
+			<img name="icon" src="/img/invitationMobile/concept2/icon.png">
+			<h1>웨딩갤러리</h1>
+			<div class="galleries">
+				포문으로 이미지갯수출력
+				<img src="">
+			</div>
+			<div class="mediaUrl">영상주소값</div>
+		</section>
+		
+
+
+		
+		<section class="invitation location">
+			<img name="icon" src="/img/invitationMobile/concept2/icon.png">
+			<h1>오시는 길</h1>
+			<div class="addressInfo"></div>
+			<p>서울 신라호텔 영빈관</p>
+			<p>중구 동호로 249</p>
+
+			<div id="map"></div>
+			
+			<p>BUS</p>
+			<p>간선 141, 242, 146<br>지선 3422</p>
+			<p>SUBWAY</p>
+			<p>동대입구역에서 하차 후 5번 출구</p>
+			<p>CAR</p>
+			<p>신라호텔 뒷편 주차장 1시간 무료</p>
+		</section>
+		
+		<section class="invitation celebration">
+			<img name="icon" src="/img/invitationMobile/concept2/icon.png">
+			<h1>축하메시지</h1>
+			<div class="celebration message-input">
+				<form>
+					<div>
+						<span>Name:</span>
+						<input type="text" id="축하글쓴이">
+					</div>
+					<hr>
+					<div>
+						<span>Secret:</span>
+						<input type="text" id="비밀번호">
+					</div>
+					<hr>
+					<div>
+						<span>Message:</span>
+						<input type="text" id="메시지">
+					</div>
+					<hr>
+				</form>
+				<button type="submit" id="message-submit">축하메시지 남기기</button>			
+			</div>
+			<div class="celebration message-output">
+				<div class="message-details" id="message-details">
+					<div id="message-name"><span>최수연</span></div>
+					<!-- <span id="message-name" >최수연</span> -->
+					<div id="message-date"><span>2021-02-16</span></div>
+					<!-- <span id="message-date">2021-02-16</span> --><br>
+					<div id="message-message">
+						<span>결혼축하해~ 행복하게 살아~</span>
+						<a id="delete-message" href="">x</a>
+					</div>
+				</div>
+				<button type="button" id="add-message" onclick="">더보기</a>
+			</div>
+		</section>
+		
+		<section class="invitation accountInfomation">
+			<div class="accountInfo">
+				<div id="account-img">
+					<img name="account-icon" src="/img/invitationMobile/concept2/account-icon.png">
+				</div>	
+				<div class="account-details">
+					<p>신랑 김철수 110-398-684197 신한은행 </p>
+					<p>신부 김영희 110-398-684197 국민은행 </p>
+				</div>	
+			</div>
+		</section>
+		<hr id="sns-line">
+		<section class="invitation sns">
+			<div class="snsInfo">
+				<a id="kakao">카카오톡</a>
+				<a id="kakaoStory">카카오스토리</a>
+				<a id="facebook">페이스북</a>
+				<a id="instagram">인스타그램</a>
+			</div>
+		</section>
+	</div>
+</div>
+</div>
+
+<script>
+
+var map = new naver.maps.Map('map', {
+    center: new naver.maps.LatLng(37.3595704, 127.105399),
+    zoom: 18,
+    zoomControl: true,
+    scrollWheel : false,
+    zoomControlOptions: { 
+        position: naver.maps.Position.TOP_RIGHT
+    }
+});
+
+var marker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(37.3595704, 127.105399),
+    map: map
+});
+
+	
+</script>
+{% endautoescape %}
+{% endblock %}
